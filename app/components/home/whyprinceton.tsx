@@ -3,22 +3,22 @@ import Image from 'next/image';
 export default function WhyPrincetonSection() {
   const features = [
     {
-      image: '/a.svg',
+      image: '/images/edu.svg',
       title: 'Progressive Education',
       borderColor: 'border-[#10B981]', // green
     },
     {
-      image: '/b.svg',
+      image: '/images/campus.svg',
       title: 'City Campus',
       borderColor: 'border-[#3B82F6]', // blue
     },
     {
-      image: '/c.svg',
+      image: '/images/child.svg',
       title: 'A School for Children',
       borderColor: 'border-[#4C231A]', // brown
     },
     {
-      image: '/d.svg',
+      image: '/images/strong.svg',
       title: 'A Strong Foundation',
       borderColor: 'border-[#FF6B6B]', // red
     },
@@ -36,7 +36,7 @@ export default function WhyPrincetonSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full max-w-7xl">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center gap-4">
-              <div className={`rounded-full overflow-hidden border-8 ${feature.borderColor} w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[290px] lg:h-[290px]`}>
+              <div className={`rounded-full overflow-hidden  w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[290px] lg:h-[290px]`}>
                 <Image
                   src={feature.image}
                   alt={feature.title}

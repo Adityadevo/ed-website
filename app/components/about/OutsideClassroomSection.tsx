@@ -39,7 +39,7 @@ export default function OutsideClassroomSection() {
       <div className="max-w-7xl mx-auto flex flex-col gap-16">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-[36px] font-bold text-[#4C231A] text-center">
-          Outside the Classromm
+          Outside the Classroom
         </h2>
 
         {/* Grid of 6 Boxes */}

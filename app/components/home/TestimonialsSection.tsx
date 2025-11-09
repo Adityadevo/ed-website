@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 export default function TestimonialsSection() {
   const thumbnails = [
     '/images/test.svg',
-    '/images/test.svg',
-   '/images/test.svg',
-    '/images/test.svg',
+    '/images/man.svg',
+   '/images/women.svg',
+    '/images/man2.svg',
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function TestimonialsSection() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-8">
           {/* Left Side - Main Image */}
           <div className="flex-shrink-0">
-            <div className="relative w-full lg:w-[362px] h-[400px] lg:h-[488px] rounded-3xl overflow-hidden border-4 border-[#4C231A]">
+            <div className="relative w-full lg:w-[362px] h-[400px] lg:h-[488px] rounded-3xl overflow-hidden ">
               <Image
                 src="/images/founder.svg"
                 alt="Parent Testimonial"
@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
               {thumbnails.map((thumb, index) => (
                 <div
                   key={index}
-                  className="relative w-full h-[150px] sm:h-[196px] rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform border-2 border-[#4C231A]"
+                  className="relative w-full h-[150px] sm:h-[196px] rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform "
                 >
                   <Image
                     src={thumb}

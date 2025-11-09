@@ -6,20 +6,20 @@ export default function Footer() {
     <footer className="w-full">
       {/* Top Footer - Contact, Apply, Syllabus */}
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="bg-[#C5D64D] flex items-center justify-center py-8 md:py-12 hover:opacity-90 transition-opacity cursor-pointer">
-          <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
+        <div className="bg-[#C5D64D] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+          <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             CONTACT
           </h3>
         </div>
 
-        <div className="bg-[#F3A661] flex items-center justify-center py-8 md:py-12 hover:opacity-90 transition-opacity cursor-pointer">
-          <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
+        <div className="bg-[#F3A661] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+          <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             APPLY
           </h3>
         </div>
 
-        <div className="bg-[#A8D47E] flex items-center justify-center py-8 md:py-12 hover:opacity-90 transition-opacity cursor-pointer">
-          <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
+        <div className="bg-[#A8D47E] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+          <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             SYLLABUS
           </h3>
         </div>
@@ -27,7 +27,7 @@ export default function Footer() {
 
       {/* Bottom Footer - Contact Info and Social */}
       <div className="bg-[#5C3A2E] py-16 px-4 md:px-8 lg:px-[100px]">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start md:items-end justify-between gap-8">
           {/* Left Side - Logo and Contact Info */}
           <div className="flex flex-col gap-6">
             {/* Logo and School Name */}

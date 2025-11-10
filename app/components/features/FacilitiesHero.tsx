@@ -12,13 +12,13 @@ export default function StateOfArtFacilities() {
       id: 2,
       alt: "Play Area",
       borderColor: "border-blue-500",
-      src: "/images/play-area.svg",
+      src: "/images/fac2.svg",
     },
     {
       id: 3,
       alt: "School Building",
       borderColor: "border-red-500",
-      src: "/images/school-building.svg",
+      src: "/images/fac3.svg",
     },
   ];
 
@@ -27,19 +27,19 @@ export default function StateOfArtFacilities() {
       id: 4,
       alt: "Playground",
       borderColor: "border-blue-600",
-      src: "/images/playground.svg",
+      src: "/images/fac4.svg",
     },
     {
       id: 5,
       alt: "Microscope",
       borderColor: "border-yellow-400",
-      src: "/images/microscope.svg",
+      src: "/images/fac5.svg",
     },
     {
       id: 6,
       alt: "Sports Facility",
       borderColor: "border-red-400",
-      src: "/images/sports.svg",
+      src: "/images/fac6.svg",
     },
   ];
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const StayConnectedGallery: React.FC = () => {
   return (
@@ -20,9 +21,9 @@ const StayConnectedGallery: React.FC = () => {
           </div>
         </div>
 
-        <button className="mt-10 inline-flex items-center px-6 py-3 rounded-full bg-[#4A2F26] text-white hover:bg-[#3c241d] transition-colors">
+        <Link href="/gallery" className="mt-10 inline-flex items-center px-6 py-3 rounded-full bg-[#4A2F26] text-white hover:bg-[#3c241d] transition-colors">
           View Our Gallery
-        </button>
+        </Link>
       </div>
     </section>
   );

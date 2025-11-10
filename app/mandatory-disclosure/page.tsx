@@ -6,6 +6,7 @@ import DisclosureHero from "../components/mandatory/DisclosureHero";
 import GeneralInfoTable from "../components/mandatory/GeneralInfoTable";
 import DocumentsTable from "../components/mandatory/DocumentsTable";
 import InfrastructureTable from "../components/mandatory/InfrastructureTable";
+import AdmissionsHero from "../components/home/AdmissionHero";
 
 export default function MandatoryDisclosurePage() {
   return (
@@ -14,8 +15,13 @@ export default function MandatoryDisclosurePage() {
       <Navbar />
 
       {/* Hero: pass your image later via imageSrc prop or change default */}
-      <DisclosureHero />
 
+      <AdmissionsHero
+        title1="Mandatory Public"
+        title2="Disclosure"
+        subtitle={undefined}
+        showLead={false}
+      />
       {/* Sections */}
       <GeneralInfoTable />
       <DocumentsTable />

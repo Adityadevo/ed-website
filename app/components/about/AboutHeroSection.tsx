@@ -18,9 +18,9 @@ export default function AboutHeroSection() {
         <div className="relative flex-shrink-0 w-full lg:w-auto flex items-center justify-center lg:justify-end">
           <div className="relative w-[500px] h-[400px] md:w-[600px] md:h-[450px]">
             {/* Yellow Circle - Top */}
-            <div className="absolute top-0 right-0 w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full border-8 border-[#FFD700] overflow-hidden z-30">
+            <div className="absolute top-0 right-0 w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full  overflow-hidden z-30">
               <Image
-                src="/about1.jpg"
+                src="/images/about1.svg"
                 alt="Teacher teaching"
                 fill
                 className="object-cover"
@@ -40,7 +40,7 @@ export default function AboutHeroSection() {
             {/* Green Circle - Right Middle */}
             <div className="absolute top-[120px] right-[50px] md:top-[140px] md:right-[70px] w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full border-8 border-[#10B981] overflow-hidden z-10">
               <Image
-                src="/about3.jpg"
+                src="/images/about2.svg"
                 alt="Teacher at blackboard"
                 fill
                 className="object-cover"

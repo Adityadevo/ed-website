@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
@@ -6,11 +7,11 @@ export default function Footer() {
     <footer className="w-full">
       {/* Top Footer - Contact, Apply, Syllabus */}
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="bg-[#C5D64D] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+        <Link href="/contact" className="bg-[#C5D64D] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
           <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             CONTACT
           </h3>
-        </div>
+        </Link>
 
         <div className="bg-[#F3A661] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
           <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">

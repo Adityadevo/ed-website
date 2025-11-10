@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function StayConnected() {
   return (
@@ -25,9 +26,9 @@ export default function StayConnected() {
           />
         </div>
 
-        <button className="bg-[#4C231A] text-white px-8 py-4 rounded-full text-sm md:text-base font-medium uppercase tracking-wide hover:bg-[#3A1B13] transition-colors shadow-lg mt-6">
+        <Link href="/gallery" className="bg-[#4C231A] text-white px-8 py-4 rounded-full text-sm md:text-base font-medium uppercase tracking-wide hover:bg-[#3A1B13] transition-colors shadow-lg mt-6">
           View Our Gallery
-        </button>
+        </Link>
       </div>
     </section>
   );

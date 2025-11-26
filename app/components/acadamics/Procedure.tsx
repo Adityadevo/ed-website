@@ -18,18 +18,18 @@ export default function ProcedureSection() {
             </p>
 
             {/* Sub Heading */}
-            <h3 className="text-lg md:text-[18px] font-bold text-[#4C231A]">
+            {/* <h3 className="text-lg md:text-[18px] font-bold text-[#4C231A]">
               GROUPS OFFERED IN HIGHER SECONDARY
-            </h3>
+            </h3> */}
 
             {/* List */}
-            <ol className="list-decimal list-inside flex flex-col gap-2 text-base md:text-lg text-gray-800">
+            {/* <ol className="list-decimal list-inside flex flex-col gap-2 text-base md:text-lg text-gray-800">
               <li>Physics, Chemistry, Biology, Mathematics</li>
               <li>Physics, Chemistry, Mathematics, Computer Science</li>
               <li>Physics, Chemistry, Botany, Zoology</li>
               <li>Accountancy, Commerce, Computer Applications, Economics</li>
               <li>Accountancy, Commerce, Business Mathematics, Economics</li>
-            </ol>
+            </ol> */}
           </div>
 
           {/* Right Side - Image with Decorative Circles */}

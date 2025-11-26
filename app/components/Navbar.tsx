@@ -22,10 +22,10 @@ export default function Navbar() {
               className="object-contain md:w-[80px] md:h-[100px] lg:w-[96px] lg:h-[100px]"
             />
             <div className="flex flex-col leading-tight">
-              <h1 className="text-[#FFD700] text-[20px] md:text-[28px] lg:text-[36px] font-bold">
+              <h1 className="text-[#FFD700] text-[20px] md:text-[28px] lg:text-[36px] font-bold font-['Storybook']">
                 Princeton
               </h1>
-              <h1 className="text-[#FFD700] text-[20px] md:text-[28px] lg:text-[36px] font-bold">
+              <h1 className="text-[#FFD700] text-[20px] md:text-[28px] lg:text-[36px] font-bold font-['Storybook']">
                 Public School
               </h1>
             </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Desktop - Right Side - Admissions Button and Nav Items */}
         <div className="hidden lg:flex flex-col items-end justify-start gap-4">
           {/* Admissions Button */}
-          <Link href="/#admissions" className="bg-white text-black px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors">
+          <Link href="/admission" className="bg-white text-black px-6 py-2 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors">
             <GraduationCap size={24} />
             <span className="font-medium">Admissions</span>
           </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="lg:hidden mt-4 flex flex-col gap-4 pb-4">
           {/* Admissions Button - Mobile */}
-          <Link href="/#admissions" className="bg-white text-black px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors w-full">
+          <Link href="/admission" className="bg-white text-black px-6 py-3 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors w-full">
             <GraduationCap size={24} />
             <span className="font-medium">Admissions</span>
           </Link>

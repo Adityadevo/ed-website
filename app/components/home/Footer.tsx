@@ -13,17 +13,17 @@ export default function Footer() {
           </h3>
         </Link>
 
-        <div className="bg-[#F3A661] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+        <Link href="/contact" className="bg-[#F3A661] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
           <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             APPLY
           </h3>
-        </div>
+        </Link>
 
-        <div className="bg-[#A8D47E] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
+        <Link href="/acadamics" className="bg-[#A8D47E] flex items-center justify-center py-8 md:py-10 hover:opacity-90 transition-opacity cursor-pointer">
           <h3 className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide">
             SYLLABUS
           </h3>
-        </div>
+        </Link>
       </div>
 
       {/* Bottom Footer - Contact Info and Social */}
@@ -41,10 +41,10 @@ export default function Footer() {
                 className="object-contain"
               />
               <div className="flex flex-col leading-tight">
-                <h2 className="text-[#FFD700] text-[36px] font-bold" style={{ fontFamily: 'serif' }}>
+                <h2 className="text-[#FFD700] text-[36px] font-bold font-['Storybook']">
                   Princeton
                 </h2>
-                <h2 className="text-[#FFD700] text-[36px] font-bold" style={{ fontFamily: 'serif' }}>
+                <h2 className="text-[#FFD700] text-[36px] font-bold font-['Storybook']">
                   Public School
                 </h2>
               </div>
@@ -53,7 +53,7 @@ export default function Footer() {
             {/* Contact Information */}
             <div className="flex flex-col gap-4 text-white text-base md:text-lg">
               <p className="font-semibold">
-                Affiliated to CBSE, New Delhi, Code No. 830880
+                Affiliated to CBSE, Delhi, Code No. 830880
               </p>
               <div className="flex flex-col gap-1">
                 <p>#96, Jyothinagar, Medahalli, Virgonagar Post,</p>
@@ -66,28 +66,27 @@ export default function Footer() {
           {/* Right Side - Social Media Icons */}
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/Deelishfoods"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-[56px] h-[56px] border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#5C3A2E] transition-all cursor-pointer"
               aria-label="Facebook"
             >
               <Facebook size={28} className="text-white hover:text-[#5C3A2E]" />
             </a>
             <a
-              href="#"
-              className="w-[56px] h-[56px] border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#5C3A2E] transition-all cursor-pointer"
-              aria-label="Twitter"
-            >
-              <Twitter size={28} className="text-white hover:text-[#5C3A2E]" />
-            </a>
-            <a
-              href="#"
+              href="https://www.instagram.com/princetonpublicschool?igsh=MXVyb2l1eXl0aXoyYQ=="
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-[56px] h-[56px] border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#5C3A2E] transition-all cursor-pointer"
               aria-label="Instagram"
             >
               <Instagram size={28} className="text-white hover:text-[#5C3A2E]" />
             </a>
             <a
-              href="#"
+              href="https://youtu.be/pY-qc-ybe28?si=GpG-uDGOtv1vUhEH"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-[56px] h-[56px] border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#5C3A2E] transition-all cursor-pointer"
               aria-label="YouTube"
             >

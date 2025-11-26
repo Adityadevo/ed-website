@@ -14,7 +14,7 @@ const StayConnectedGallery: React.FC = () => {
         <div className="mt-10">
           <div className="w-full overflow-hidden rounded-lg">
             <img
-              src="/images/connected.svg"
+              src="/images/connected2.svg"
               alt="Stay Connected"
               className="w-full h-auto object-contain"
             />

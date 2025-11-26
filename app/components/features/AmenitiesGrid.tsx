@@ -35,25 +35,6 @@ const AMENITIES: Amenity[] = [
     image: "/images/multimedia.svg",
   },
   {
-    title: "Music Room",
-    description: "Equipped music room with trained instructors.",
-    mockIndex: 6,
-    image: "/images/music.svg",
-  },
-  {
-    title: "Arts Studio",
-    description: "Studios for drawing, painting and artistic interests.",
-    mockIndex: 5,
-    image: "/images/arts.svg",
-  },
-  
-  {
-    title: "In Campus Cafeteria",
-    description: "Fully furnished cafeteria with a special care for hygiene.",
-    mockIndex: 7,
-    image: "/images/cafeteria.svg",
-  },
-  {
     title: "Personality Development",
     description: "Moral and ethical development programme.",
     mockIndex: 8,

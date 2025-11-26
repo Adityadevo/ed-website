@@ -8,22 +8,26 @@ export default function FromTheDeskSection() {
 
   const content = {
     ceo: {
-      name: 'Mr Anwar Pasha',
-      designation: 'B.Com., LLB',
-      image: '/images/ceo.svg',
+      name: '',
+      designation: '',
+      image: '/images/owner.svg',
       text: `It gives me immense pleasure when I realize that we are able to transform the vision of My Father in to a reality and bring light to thousands of life through the noble service of imparting EDUCATION. In the process we have overcome several hurdles and setbacks. But with courage and conviction we continued our journey and pioneered the concept of modern education. It is my earnest desire to constantly upgrade the quality of education at all levels and open new vistas in education. We are marching ahead with a motto of dedication, devotion & discipline towards achieving the stature of Secondary & senior secondary education. With the kind of motivation and support we have received over the years, we are committed and determined to achieve our goal.I feel proud when PRINCETON PUBLIC SCHOOL, my dream project makes progressive strides towards education and modernization, with holistic development as the top priorities. I wish the outstanding excellence will make PRINCETON PUBLIC SCHOOL shine as one of the best school in the city.`,
     },
     secretary: {
-      name: 'Secretary Name',
-      designation: 'Designation',
-      image: '/secretary.jpg',
-      text: 'Secretary message content goes here...',
+      name: '',
+      designation: '',
+      image: 'images/secretary.svg',
+      text: `Education of the highest quality is the greatest gift that parents can give to their children. Your child needs exceptional academic and intellectual creativity to take on positions of leadership and face the challenges across the globe.
+Princeton Public School follows CBSE board curriculum to meet the needs of today’s learners. A plethora of academic and co-curricular activities are the opportunities to all the students to discover various facets of their personalities.
+At PPS we believe that children need not always be taught to do things; instead they should be encouraged to explore, discover and learn, under the guidance of the best teachers.
+We pledge to fulfill the expectations of our parent and student community and set a benchmark that is unparalleled in the road of quality education.
+I invite you to visit PPS, centrally located and easily accessible in this part of garden city, where we create a best environment for teaching and learning system and make it a joyful place for both teachers and students.`,
     },
     principal: {
-      name: 'Principal Name',
-      designation: 'Designation',
-      image: '/principal.jpg',
-      text: 'Principal message content goes here...',
+      name: '',
+      designation: '',
+      image: '/images/principal.svg',
+      text: 'Transformation of the society should take place from the root level, only then we can rise in the sky. PRINCETON PUBLIC SCHOOL is committed to play a key role in education by shaping the future of our students and making them good, valued human being. We aim to provide not just basic education but to spot their talent and nurture it. Our Endeavour has been to study, understand our children and to provide them with quality education, which enables them to compete globally.',
     },
   };
 
@@ -72,7 +76,7 @@ export default function FromTheDeskSection() {
                 src={content[activeTab].image}
                 alt={content[activeTab].name}
                 fill
-                className="object-cover grayscale"
+                className="object-cover "
               />
               {/* Text Overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">

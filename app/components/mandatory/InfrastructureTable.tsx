@@ -49,9 +49,9 @@ const InfrastructureTable: React.FC<Props> = ({
                   } rounded-lg text-center text-[15px]`}
                   // style={{ boxShadow: "0 1px 1px #e0e0e0" }}
                 >
-                  <td className="px-6 py-6 align-middle font-normal">{row.sl}</td>
-                  <td className="px-6 py-6 align-middle font-normal">{row.label}</td>
-                  <td className="px-6 py-6 align-middle break-words">{row.value}</td>
+                  <td className="px-6 py-6 align-middle text-black font-normal">{row.sl}</td>
+                  <td className="px-6 py-6 align-middle text-black font-normal">{row.label}</td>
+                  <td className="px-6 py-6 align-middle text-black break-words">{row.value}</td>
                 </tr>
               ))}
             </tbody>

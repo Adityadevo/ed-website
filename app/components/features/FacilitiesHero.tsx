@@ -58,7 +58,7 @@ export default function StateOfArtFacilities() {
             {leftFacilities.map((facility, index) => (
               <div
                 key={facility.id}
-                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-8 ${
+                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 ${
                   facility.borderColor
                 } ${
                   index === 1
@@ -91,7 +91,7 @@ export default function StateOfArtFacilities() {
             {rightFacilities.map((facility, index) => (
               <div
                 key={facility.id}
-                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-8 ${
+                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-2 ${
                   facility.borderColor
                 } ${
                   index === 1
@@ -117,7 +117,7 @@ export default function StateOfArtFacilities() {
           {[...leftFacilities, ...rightFacilities].map((facility) => (
             <div
               key={`mobile-${facility.id}`}
-              className={`relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-6 ${facility.borderColor}`}
+              className={`relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 ${facility.borderColor}`}
             >
               <Image
                 src={facility.src}

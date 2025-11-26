@@ -17,9 +17,11 @@ export default function HeroSection() {
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full border-[8px] border-[#FF6B6B] rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-              title="Princeton Public School Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              src="https://www.youtube.com/embed/pY-qc-ybe28?si=p9DNuvmfhl9QrCxq"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
           </div>

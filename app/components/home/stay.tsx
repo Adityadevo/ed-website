@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function StayConnected() {
   return (
@@ -9,16 +10,24 @@ export default function StayConnected() {
           Stay Connected
         </h2>
 
-        <p className="text-center text-base md:text-lg text-gray-700 max-w-4xl">
-          Keep up with all things Capitol Hill Day School by following us on{' '}
-          <span className="font-semibold">Instagram</span> and liking us on{' '}
-          <span className="font-semibold">Facebook</span>. You can also follow our{' '}
-          <span className="font-semibold">Field Education Instagram</span> to see how experiential learning connects to our curriculum.
-        </p>
+        <div className="text-center text-base md:text-lg text-gray-700 max-w-4xl">
+          <p className="mb-4">Stay connected with us through our social media channels:</p>
+          <div className="flex justify-center gap-6 mt-4">
+            <a href="https://www.facebook.com/Deelishfoods" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">
+              <Facebook className="w-5 h-5" /> Facebook
+            </a>
+            <a href="https://www.instagram.com/princetonpublicschool?igsh=MXVyb2l1eXl0aXoyYQ==" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">
+              <Instagram className="w-5 h-5" /> Instagram
+            </a>
+            <a href="https://youtu.be/pY-qc-ybe28?si=GpG-uDGOtv1vUhEH" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">
+              <Youtube className="w-5 h-5" /> YouTube
+            </a>
+          </div>
+        </div>
 
         <div className="relative w-full max-w-[1240px] h-auto mt-6">
           <Image
-            src="/images/stay.svg"
+            src="/images/stay2.svg"
             alt="Stay Connected Gallery"
             width={1240}
             height={695.29}

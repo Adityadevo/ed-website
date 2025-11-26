@@ -1,24 +1,46 @@
+import Image from 'next/image';
+
 export default function DiveIntoOurProgram() {
   const programs = [
     {
+      description: `Our Montessori students lead, teach, interact, and learn through collaboration, cooperation, and observation.`,
       title: 'Early Childhood Program',
-      subtitle: 'Pre KG  |  LKG  |  UKG',
-      bgColor: 'bg-[#A64253]',
+      subtitle: 'Pre KG   |   LKG   |   UKG',
+      bgColor: '#A64253',
+      image: '/images/basic.svg',
+      headingColor: '#fff',
+      paraColor: '#fff',
+      subColor: '#fff',
     },
     {
+      description: `We capture our Lower School students' enthusiasm and excitement and channel it into a program that emphasizes learning, community involvement, and global understanding.`,
       title: 'Elementary Program',
       subtitle: 'Grade 1 to 4',
-      bgColor: 'bg-[#C5D64D]',
+      bgColor: '#C5D64D',
+      image: '/images/nurture.svg',
+      headingColor: '#2C5234',
+      paraColor: '#2C5234',
+      subColor: '#08594C',
     },
     {
+      description: `Our Middle School program is geared to meet the needs of our students, acknowledging and appreciating their requirement for structure and autonomy, as well as their desire for acceptance and success.`,
       title: 'Upper Grade Program',
       subtitle: 'Grade 5 to 7',
-      bgColor: 'bg-[#F3A661]',
+      bgColor: '#F3A661',
+      image: '/images/prek.svg',
+      headingColor: '#2C5234',
+      paraColor: '#2C5234',
+      subColor: '#08594C',
     },
     {
+      description: `Our High School program is designed to support students by balancing their need for structure with opportunities for independence, while fostering a sense of belonging and guiding them toward success`,
       title: 'High School Program',
       subtitle: 'Grade 8 to 10',
-      bgColor: 'bg-[#A8D47E]',
+      bgColor: '#A8D47E',
+      image: '/images/communityy.svg',
+      headingColor: '#2C5234',
+      paraColor: '#2C5234',
+      subColor: '#08594C',
     },
   ];
 
@@ -38,14 +60,61 @@ export default function DiveIntoOurProgram() {
           {programs.map((program, index) => (
             <div
               key={index}
-              className={`${program.bgColor} w-full h-[290px] flex flex-col items-start justify-end p-6 rounded-sm shadow-lg hover:scale-105 transition-transform cursor-pointer`}
+              className="relative flex flex-col justify-between rounded-sm shadow-lg hover:scale-105 transition-transform cursor-pointer overflow-hidden"
+              style={{
+                backgroundColor: program.bgColor,
+                width: 290,
+                height: 290,
+                padding: 24,
+              }}
             >
-              <h3 className="text-white text-xl font-bold mb-2">
-                {program.title}
-              </h3>
-              <p className="text-white text-sm font-medium">
-                {program.subtitle}
-              </p>
+              {/* Pattern/image overlay */}
+              {program.image && (
+                <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
+                  <Image
+                    src={program.image}
+                    alt={program.title}
+                    fill
+                    style={{ objectFit: 'contain' }}
+                  />
+                </div>
+              )}
+
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <p
+                  style={{
+                    fontFamily: 'Nunito Sans, sans-serif',
+                    fontWeight: 700,
+                    fontSize: 14,
+                    color: program.paraColor,
+                  }}
+                >
+                  {program.description}
+                </p>
+                <div>
+                  <h3
+                    className="mb-1"
+                    style={{
+                      fontFamily: 'Storybook, serif',
+                      fontWeight: 500,
+                      fontSize: 18,
+                      color: program.headingColor,
+                    }}
+                  >
+                    {program.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'Nunito Sans, sans-serif',
+                      fontWeight: 700,
+                      fontSize: 14,
+                      color: program.subColor,
+                    }}
+                  >
+                    {program.subtitle}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

@@ -19,7 +19,7 @@ export default function AdmissionsHero({
     <section className="relative w-full h-[500px] md:h-[600px] lg:h-[700px]">
       {/* Background Image */}
       <Image
-        src="/images/admissions.jpg"
+        src="/images/admissions.png"
         alt="School Campus"
         fill
         className="object-cover brightness-75"

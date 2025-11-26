@@ -14,14 +14,14 @@ export default function FeaturesSection() {
       textColor: 'text-white',
     },
     {
-      image: '/images/girl.svg',
+      image: '/images/girl.png',
       text: '',
       bgColor: '',
     },
     {
       image: '/images/nurture.svg',
       text: 'Children are known and nurtured',
-      bgColor: '#DAE06F',
+      bgColor: '#C5D64D',
       textColor: 'text-[#2C5234]',
     },
     {
@@ -31,7 +31,7 @@ export default function FeaturesSection() {
       textColor: 'text-[#2C5234]',
     },
     {
-      image: '/images/childern.svg',
+      image: '/images/children.svg',
       text: '',
       bgColor: '',
     },

@@ -66,7 +66,7 @@ export default function Footer() {
           {/* Right Side - Social Media Icons */}
           <div className="flex items-center gap-4">
             <a
-              href="https://www.facebook.com/Deelishfoods"
+              href="https://www.facebook.com/share/1A9RxyKniK/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-[56px] h-[56px] border-2 border-white rounded-md flex items-center justify-center hover:bg-white hover:text-[#5C3A2E] transition-all cursor-pointer"

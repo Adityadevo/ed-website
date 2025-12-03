@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function FeaturesSection() {
   const features = [
     {
-      image: '/images/apple.svg',
+      image: '/images/bgchild.jpeg',
       text: '',
       bgColor: '',
     },
@@ -37,12 +37,12 @@ export default function FeaturesSection() {
     },
     {
       image: '/images/prek.svg',
-      text: 'The PreK to X Advantage',
+      text: 'The Pre KG to X Advantage',
       bgColor: '#EAA05B',
       textColor: 'text-white',
     },
     {
-      image: '/images/colour.svg',
+      image: '/images/play.jpeg',
       text: '',
       bgColor: '',
     },

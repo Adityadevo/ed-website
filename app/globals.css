@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* Storybook font (download .woff2/.woff into public/fonts/) */
+@font-face {
+  font-family: 'Storybook';
+  src: url('/fonts/Storybook.woff2') format('woff2'),
+       url('/fonts/Storybook.woff') format('woff'),
+       url('/fonts/Storybook.ttf') format('truetype'),
+       url('/fonts/Storybook.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -7,9 +7,13 @@ export interface InfoRow {
 }
 
 const defaultRows: InfoRow[] = [
-  { sl: 1, label: "Name of the School", value: "Princeton Public School" },
-  { sl: 2, label: "Affiliation No. (If Applicable)", value: "830880" },
-  { sl: 3, label: "School Code (If Applicable)", value: "45979" },
+  {
+    sl: 1,
+    label: "Name of the School",
+    value: <span className="font-['Storybook']">Princeton Public School</span>,
+  },
+  { sl: 2, label: "Affiliation No. (If Applicable)", value: "3530528" },
+  { sl: 3, label: "School Code (If Applicable)", value: "830880" },
   {
     sl: 4,
     label: "Complete Address",
@@ -86,9 +90,9 @@ const GeneralInfoTable: React.FC<Props> = ({
                   } rounded-lg text-center text-[15px]`}
                   // style={{ boxShadow: "0 2px 6px #e0e0e0" }}
                 >
-                  <td className="px-6 py-6 align-middle font-semibold">{row.sl}</td>
-                  <td className="px-6 py-6 align-middle font-normal">{row.label}</td>
-                  <td className="px-6 py-6 align-middle font-semibold break-words">{row.value}</td>
+                  <td className="px-6 py-6 align-middle text-black font-semibold">{row.sl}</td>
+                  <td className="px-6 py-6 align-middle text-black font-normal">{row.label}</td>
+                  <td className="px-6 py-6 align-middle text-black font-semibold break-words">{row.value}</td>
                 </tr>
               ))}
             </tbody>

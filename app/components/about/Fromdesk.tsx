@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function FromTheDeskSection() {
-  const [activeTab, setActiveTab] = useState<'ceo' | 'secretary' | 'principal'>('ceo');
+  const [activeTab, setActiveTab] = useState<'ceo' | 'secretary' | 'principal'>('secretary');
 
   const content = {
     ceo: {
@@ -18,7 +18,7 @@ export default function FromTheDeskSection() {
       designation: '',
       image: 'images/secretary.svg',
       text: `Education of the highest quality is the greatest gift that parents can give to their children. Your child needs exceptional academic and intellectual creativity to take on positions of leadership and face the challenges across the globe.
-Princeton Public School follows CBSE board curriculum to meet the needs of today’s learners. A plethora of academic and co-curricular activities are the opportunities to all the students to discover various facets of their personalities.
+Princeton Public School follows CBSE board curriculum to meet the needs of today's learners. A plethora of academic and co-curricular activities are the opportunities to all the students to discover various facets of their personalities.
 At PPS we believe that children need not always be taught to do things; instead they should be encouraged to explore, discover and learn, under the guidance of the best teachers.
 We pledge to fulfill the expectations of our parent and student community and set a benchmark that is unparalleled in the road of quality education.
 I invite you to visit PPS, centrally located and easily accessible in this part of garden city, where we create a best environment for teaching and learning system and make it a joyful place for both teachers and students.`,
@@ -42,20 +42,20 @@ I invite you to visit PPS, centrally located and easily accessible in this part 
         {/* Tabs */}
         <div className="grid grid-cols-1 md:grid-cols-3 w-full">
           <button
-            onClick={() => setActiveTab('ceo')}
-            className={`py-4 text-white text-xl md:text-2xl font-semibold transition-all ${
-              activeTab === 'ceo' ? 'bg-[#A64253]' : 'bg-[#A64253]/70 hover:bg-[#A64253]'
-            }`}
-          >
-            CEO
-          </button>
-          <button
             onClick={() => setActiveTab('secretary')}
             className={`py-4 text-white text-xl md:text-2xl font-semibold transition-all ${
               activeTab === 'secretary' ? 'bg-[#F3A661]' : 'bg-[#F3A661]/70 hover:bg-[#F3A661]'
             }`}
           >
             Secretary
+          </button>
+          <button
+            onClick={() => setActiveTab('ceo')}
+            className={`py-4 text-white text-xl md:text-2xl font-semibold transition-all ${
+              activeTab === 'ceo' ? 'bg-[#A64253]' : 'bg-[#A64253]/70 hover:bg-[#A64253]'
+            }`}
+          >
+            CEO
           </button>
           <button
             onClick={() => setActiveTab('principal')}

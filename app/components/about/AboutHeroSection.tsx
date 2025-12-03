@@ -30,7 +30,7 @@ export default function AboutHeroSection() {
             {/* Blue Circle - Bottom Left */}
             <div className="absolute bottom-0 left-0 w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full border-8 border-[#4A90E2] overflow-hidden z-30">
               <Image
-                src="/images/image.png"
+                src="/images/play.jpeg"
                 alt="School building"
                 fill
                 className="object-cover"
@@ -38,9 +38,9 @@ export default function AboutHeroSection() {
             </div>
 
             {/* Green Circle - Right Middle */}
-            <div className="absolute top-[120px] right-[50px] md:top-[140px] md:right-[70px] w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full border-0 border-[#10B981] overflow-hidden z-20">
+            <div className="absolute top-[120px] border-8 border-[#10B981] right-[50px] md:top-[140px] md:right-[70px] w-[250px] h-[250px] md:w-[290px] md:h-[290px] rounded-full border-0 border-[#10B981] overflow-hidden z-20">
               <Image
-                src="/images/about2.svg"
+                src="/images/teacher.jpeg"
                 alt="Teacher at blackboard"
                 fill
                 className="object-cover"

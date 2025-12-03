@@ -13,7 +13,7 @@ export default function StayConnected() {
         <div className="text-center text-base md:text-lg text-gray-700 max-w-4xl">
           <p className="mb-4">Stay connected with us through our social media channels:</p>
           <div className="flex justify-center gap-6 mt-4">
-            <a href="https://www.facebook.com/Deelishfoods" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">
+            <a href="https://www.facebook.com/share/1A9RxyKniK/" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">
               <Facebook className="w-5 h-5" /> Facebook
             </a>
             <a href="https://www.instagram.com/princetonpublicschool?igsh=MXVyb2l1eXl0aXoyYQ==" target="_blank" rel="noopener noreferrer" className="text-[#4C231A] hover:underline font-semibold flex items-center gap-2">

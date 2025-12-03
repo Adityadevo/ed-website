@@ -52,8 +52,8 @@ const DocumentsTable: React.FC<Props> = ({
                     i % 2 === 1 ? "bg-blue-50/60" : "bg-amber-50/60"
                   } rounded-lg text-center`}
                 >
-                  <td className="px-6 py-6 align-middle font-semibold">{row.sl}</td>
-                  <td className="px-6 py-6 align-middle font-normal">{row.title}</td>
+                  <td className="px-6 py-6 align-middle text-black font-semibold">{row.sl}</td>
+                  <td className="px-6 py-6 align-middle text-black font-normal">{row.title}</td>
                   <td className="px-6 py-6 align-middle">
                     {row.href ? (
                       <div className="flex items-center justify-center space-x-2">

@@ -18,11 +18,6 @@ const defaultDocs: DocumentRow[] = [
   { sl: 9, title: "Current Academic Calendar", href: "/pdf/PPS Academic Calendar.pdf" },
   { sl: 10, title: "Parent Teacher Association", href: "/pdf/PPS PTA.pdf" },
   { sl: 11, title: "Staff Details", href: "/pdf/PPS Staff Details.pdf" },
-  // { sl: 12, title: "Academic Calendar", href: "/pdf/academic-calendar.pdf" },
-  // { sl: 13, title: "School Management Committee", href: "/pdf/smc.pdf" },
-  // { sl: 14, title: "List of PTA Members", href: "/pdf/pta-members.pdf" },
-  // { sl: 15, title: "3-year Results of Board Examination", href: "/pdf/board-results.pdf" },
-  // { sl: 16, title: "Teachers Details", href: "/pdf/teachers-details.pdf" },
 ];
 
 interface Props {
@@ -61,14 +56,29 @@ const DocumentsTable: React.FC<Props> = ({
                   <td className="px-6 py-6 align-middle font-normal">{row.title}</td>
                   <td className="px-6 py-6 align-middle">
                     {row.href ? (
+                      <div className="flex items-center justify-center space-x-2">
                       <a
                         href={row.href}
-                        download
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center hover:opacity-80 transition-opacity"
+                        className="hover:opacity-80 transition-opacity"
+                        title="Open in new tab"
                       >
                         <img src="/images/pdf.svg" alt="PDF Icon" className="h-10 w-10" />
                       </a>
+                      {/* <a
+                        href={row.href}
+                        download
+                        className="text-gray-600 hover:text-[#4A2F26] transition-colors"
+                        title="Download"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                          <polyline points="7 10 12 15 17 10"></polyline>
+                          <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                      </a> */}
+                    </div>
                     ) : (
                       <span className="inline-flex items-center justify-center text-gray-500">
                         N/A

@@ -20,7 +20,7 @@ export default function AboutOurSchoolSection() {
               {/* Top Right Image - Classroom Scene */}
               <div className="absolute top-0 right-4 w-[347px] h-[295px]  overflow-hidden z-30">
                 <Image
-                  src="/images/school1.svg"
+                  src="/images/audi.png"
                   alt="Classroom activity"
                   fill
                   className="object-cover"
@@ -28,9 +28,9 @@ export default function AboutOurSchoolSection() {
               </div>
 
               {/* Middle Image - Student Writing */}
-              <div className="absolute top-[400px] right-[350px] w-[520px] h-[178px]  overflow-hidden z-20">
+              <div className="absolute top-[400px] right-[362px] w-[520px] h-[178px]  overflow-hidden z-20">
                 <Image
-                  src="/images/school2.svg"
+                  src="/images/play.jpeg"
                   alt="Student writing"
                   fill
                   className="object-cover"
@@ -40,7 +40,7 @@ export default function AboutOurSchoolSection() {
               {/* Bottom Left Image - Rock Climbing */}
               <div className="absolute top-[280px] right-4 w-[347px] h-[295px]  overflow-hidden z-10">
                 <Image
-                  src="/images/school3.svg"
+                  src="/images/dance.jpg"
                   alt="Rock climbing activity"
                   fill
                   className="object-cover"
@@ -64,7 +64,7 @@ export default function AboutOurSchoolSection() {
           <div className="flex flex-col gap-4">
             <div className="w-full h-[250px] overflow-hidden">
               <Image
-                src="/images/school1.svg"
+                src="/images/audi.png"
                 alt="Classroom activity"
                 width={400}
                 height={250}
@@ -73,7 +73,7 @@ export default function AboutOurSchoolSection() {
             </div>
             <div className="w-full h-[200px]  overflow-hidden">
               <Image
-                src="/images/school2.svg"
+                src="/images/play.jpeg"
                 alt="Student writing"
                 width={400}
                 height={200}
@@ -82,7 +82,7 @@ export default function AboutOurSchoolSection() {
             </div>
             <div className="w-full h-[250px] border-6  overflow-hidden">
               <Image
-                src="/images/school3.svg"
+                src="/images/dance.jpg"
                 alt="Rock climbing activity"
                 width={400}
                 height={250}

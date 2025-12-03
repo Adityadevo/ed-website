@@ -35,15 +35,36 @@ export default function ContactSection() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
+    
     try {
       setSubmitting(true);
-      // Placeholder submit. You can wire to an API route later.
-      await new Promise((r) => setTimeout(r, 800));
-      alert("Thanks! Your message has been submitted.");
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      
+      const response = await fetch('https://formspree.io/f/mwpdolve', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message
+        }),
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message! We will get back to you soon.');
+        // Reset form
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error sending your message. Please try again later.');
     } finally {
       setSubmitting(false);
     }
@@ -65,7 +86,7 @@ export default function ContactSection() {
             {/* Socials */}
             <div className="flex items-center gap-10 mt-2 my-5">
               <Link
-                href="https://www.facebook.com/Deelishfoods"
+                href="https://www.facebook.com/share/1A9RxyKniK/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -92,6 +113,7 @@ export default function ContactSection() {
                 <Youtube className="w-6 h-6" />
               </Link>
             </div>
+            
           </div>
 
           {/* Card header part */}

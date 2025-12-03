@@ -14,7 +14,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Princeton Public School",
-  description: "princeton public school",
+  description: "Princeton Public School - Excellence in Education",
+  icons: {
+    icon: '/images/logo.svg',
+    apple: '/images/logo.svg',
+  },
+  openGraph: {
+    title: 'Princeton Public School',
+    description: 'Excellence in Education',
+    images: [{
+      url: '/images/logo.svg',
+      width: 96,
+      height: 100,
+      alt: 'Princeton Public School Logo',
+    }],
+  },
 };
 
 export default function RootLayout({

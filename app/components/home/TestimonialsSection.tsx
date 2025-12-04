@@ -3,41 +3,44 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
+
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      image: '/images/Ravind Singh.jpeg',
-      name: 'Mr. Ravind Singh',
-      designation: 'Parent of Ayaan Singh & Aarna Singh',
-      text: "Princeton School is one of the best institutions setting higher standards of education. The School is committed to providing education and also co-curricular activities that enhance students' creativity and knowledge. The focus on holistic development of students is commendable. The staff is good and cooperative, and the management is always supportive. I am extremely pleased with my children's progress.",
+      image: '/images/Faruk Pasha.jpeg',
+      name: 'Mr. FARUK PASHA',
+      designation: 'Parent of Midhat Fatimah of Grade IV and Manha Maryam of Grade I (2025-26 Batch)',
+      text: "Princeton Public School provides a safe and inspiring environment for students to learn, grow and discover their true potential. It shapes compassionate individuals for the future.",
     },
     {
-      image: '/images/Faruk Pasha.jpeg',
-      name: 'Mr. Faruk Pasha',
-      designation: 'Parent of Ayan Khan',
-      text: "Princeton School has been a blessing for my son Ayan. The school encourages children to think independently and work collaboratively. The caring teachers and strong academic program have helped my child grow in confidence and character. The school's commitment to both academic excellence and personal development is truly impressive.",
+      image: '/images/Ravind Singh.jpeg',
+      name: 'Mr. RAVIND SINGH',
+      designation: 'Parent of Veena Kuwar of Grade III (2025-26 Batch)',
+      text: "Excellent coaching at a reasonable fee structure. Management is very good and excellent skilled teachers with good infrastructure. A very good school for overall development of a child. My child is doing well after joining this school. I am very much happy and satisfied with the school.",
     },
     {
       image: '/images/Rahamath P S.jpeg',
-      name: 'Mrs. Rahamath P. S.',
-      designation: 'Parent of Ayesha Khanum',
-      text: 'The school perfectly balances academics with sports and arts. My daughter Ayesha looks forward to school every day, and we truly value the supportive and nurturing environment here. The teachers go above and beyond to ensure each child receives individual attention and care.',
-    },
-    {
-      image: '/images/Sowmya H N.jpeg',
-      name: 'Mrs. Sowmya H. N.',
-      designation: 'Parent of Ayaan',
-      text: "The teachers at Princeton School are extremely approachable, and the communication with parents is excellent. We have seen consistent academic progress and all-round development in our son Ayaan. The school's focus on both academics and co-curricular activities has helped him grow into a well-rounded individual.",
+      name: 'Mrs. RAHAMATH P S',
+      designation: 'Parent of Rehan Hussain of Grade IX and Rania Hussain of Grade VIII (2025-26 Batch)',
+      text: "I see and feel both my children make leaps and bounds academically, socially and above all \"They are in safe hands\". The management, teachers and non-teaching staff are highly cooperative and treat children with utmost care, respect and pay attention individually. The annual events like sports, science-tech, food fest, educational tour and many more within affordable fee package make the bonding more strong. Happy to have such an institution in our society.",
     },
     {
       image: '/images/Moula B.jpeg',
-      name: 'Mr. Moula B.',
-      designation: 'Parent of Mohammad Ayan',
-      text: "Princeton School focuses on instilling strong values, discipline, and curiosity in its students. The various activities, projects, and guidance provided have shaped our son Mohammad Ayan into a confident and eager learner. We are grateful for the school's commitment to excellence in education.",
+      name: 'Mr. MOULA.B',
+      designation: 'Parent of Syeda Uzma of Grade VIII (2025-26 Batch)',
+      text: "Teachers' involvement in school events extends learning beyond the classroom and enriches the school community. It appears that classroom management is challenging to enhance study system.",
+    },
+    {
+      image: '/images/Sowmya H N.jpeg',
+      name: 'Mrs. SOWMYA H N',
+      designation: 'Parent of Khushi N of Grade I and Abishai N of Grade II (2025-26 Batch)',
+      text: "I am pleased to share and express my sincere appreciation for the school's consistent support and dedicated efforts in my children's overall development, both academically and in other activities (project works, skating, etc). They enjoy their learning experience and feel very comfortable in the school environment. We are grateful that they got excellent teachers and supportive friends.",
     },
   ];
 
+
   const [currentIndex, setCurrentIndex] = useState(0);
+
 
   return (
     <section className="pt-16 px-4 md:px-8 lg:px-[100px] bg-[#F5F5E8]">
@@ -47,6 +50,7 @@ export default function TestimonialsSection() {
           Don't take our word for it!<br />
           Hear it from our <span className="italic">Parents!</span>
         </h2>
+
 
         {/* Main Content - Image and Text */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-8">
@@ -63,6 +67,7 @@ export default function TestimonialsSection() {
             </div>
           </div>
 
+
           {/* Right Side - Content */}
           <div className="flex flex-col justify-between flex-1">
             {/* Testimonial Text */
@@ -71,12 +76,14 @@ export default function TestimonialsSection() {
               {testimonials[currentIndex].text}
             </p>
 
+
             {/* Name and Next Button */
             }
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h3 className="text-xl font-bold text-[#4C231A]">{testimonials[currentIndex].name}</h3>
                 <p className="text-gray-600">{testimonials[currentIndex].designation}</p>
+
 
               </div>
               <button
@@ -87,6 +94,7 @@ export default function TestimonialsSection() {
                 <ArrowRight size={24} className="font-bold" strokeWidth={3} />
               </button>
             </div>
+
 
             {/* Thumbnail Images */
             }

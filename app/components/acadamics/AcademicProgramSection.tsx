@@ -1,28 +1,31 @@
 export default function AcademicProgramSection() {
   const kindergartenSchedule = [
     { timing: '08:45 AM – 09:00 AM', duration: '15 min', details: 'Class Assembly' },
-    { timing: '09:00 AM – 10:00 AM', duration: '1 Hour', details: 'Rhyme Time & Activity Time' },
-    { timing: '10:00 AM – 10:30 AM', duration: '30 Min', details: 'Snacks Time' },
-    { timing: '10:30 AM – 11:00 AM', duration: '30 Min', details: 'Story Time' },
-    { timing: '11:00 AM – 11:20 AM', duration: '20 Min', details: 'Circle Time / Reflection Time' },
-    { timing: '11:20 AM – 12:00 PM', duration: '40 Min', details: 'Skill Time / Play Time / Lunch Break' },
+    { timing: '09:00 AM – 09:40 AM', duration: '40 min', details: 'Class Works' },
+    { timing: '09:40 AM – 10:20 AM', duration: '40 Min', details: 'Skill Development' },
+    { timing: '10:20 AM – 10:30 AM', duration: '10 Min', details: 'Snack Break' },
+    { timing: '10:30 AM – 11:10 AM', duration: '40 Min', details: 'Indoor Outdoor Activity' },
+    { timing: '11:10 AM – 11:50 PM', duration: '40 Min', details: 'Handwriting' },
+        { timing: '11:50 AM – 12:30 PM', duration: '40 Min', details: 'Story Telling/Mutlimedia' },
+            { timing: '12:30 PM', duration: '', details: 'Long Bell Departure of Students' },
   ];
 
-  const schoolSchedule = [
-    { timing: '08:45 AM – 08:55 AM', duration: '10 min', details: 'Class Assembly' },
-    { timing: '09:00 AM – 09:40 AM', duration: '40 Min', details: '1st Period' },
-    { timing: '09:40 AM – 10:20 AM', duration: '40 Min', details: '2nd Period' },
-    { timing: '10:20 AM – 10:30 AM', duration: '10 Min', details: 'Break' },
-    { timing: '10:30 AM – 11:10 AM', duration: '40 Min', details: '3rd Period' },
-    { timing: '11:10 AM – 11:50 AM', duration: '40 Min', details: '4th Period' },
-    { timing: '11:50 AM – 12:30 PM', duration: '40 Min', details: '5th Period' },
-    { timing: '12:30 PM – 01:00 PM', duration: '30 Min', details: 'Lunch Break' },
-    { timing: '01:00 PM – 01:40 PM', duration: '40 Min', details: '6th Period' },
-    { timing: '01:40 PM – 02:20 PM', duration: '40 Min', details: '7th Period' },
-    { timing: '02:20 PM – 03:00 PM', duration: '40 Min', details: '8th Period' },
-    { timing: '03:00 PM – 03:30 PM', duration: '30 Min', details: 'Co-curricular Activities' },
-    { timing: '03:30 PM', duration: '', details: 'Dispersal' },
-  ];
+ const schoolSchedule = [ 
+    { timing: '8:45 AM – 9:00 AM', duration: '15 min', details: 'Assembly' },
+    { timing: '9:00 AM – 9:40 AM', duration: '40 min', details: '1st Period' },
+    { timing: '9:40 AM – 10:20 AM', duration: '40 min', details: '2nd Period' },
+    { timing: '10:20 AM – 10:30 AM', duration: '10 min', details: 'Snack Break' },
+    { timing: '10:30 AM – 11:10 AM', duration: '40 min', details: '3rd Period' },
+    { timing: '11:10 AM – 11:50 AM', duration: '40 min', details: '4th Period' },
+    { timing: '11:50 AM – 12:30 PM', duration: '40 min', details: '5th Period' },
+    { timing: '12:30 PM – 1:10 PM', duration: '40 min', details: 'Lunch Break' },
+    { timing: '1:10 PM – 1:50 PM', duration: '40 min', details: '6th Period' },
+    { timing: '1:50 PM – 2:30 PM', duration: '40 min', details: '7th Period' },
+    { timing: '2:30 PM – 3:10 PM', duration: '40 min', details: '8th Period' },
+    { timing: '3:10 PM', duration: '', details: 'Long Bell-Departure of students' },
+    { timing: '4:00 PM', duration: '', details: 'Departure of staffs' },
+];
+
 
   return (
     <section className="py-16 px-4 md:px-8 lg:px-[100px] bg-white">

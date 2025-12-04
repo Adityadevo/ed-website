@@ -12,8 +12,8 @@ const defaultRows: InfoRow[] = [
     label: "Name of the School",
     value: <span className="font-['Storybook']">Princeton Public School</span>,
   },
-  { sl: 2, label: "Affiliation No. (If Applicable)", value: "3530528" },
-  { sl: 3, label: "School Code (If Applicable)", value: "830880" },
+  { sl: 2, label: "Affiliation No. (If Applicable)", value: "830880" },
+  { sl: 3, label: "School Code (If Applicable)", value: "45979" },
   {
     sl: 4,
     label: "Complete Address",

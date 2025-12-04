@@ -10,7 +10,7 @@ type AdmissionsHeroProps = {
 
 export default function AdmissionsHero({
   title1 = 'Admissions Open',
-  title2 = '2025-26',
+  title2 = '2026-27',
   subtitle = 'CBSE Syllabus',
   showLead = true,
   leadText = 'Lead',

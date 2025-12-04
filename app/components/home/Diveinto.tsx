@@ -3,9 +3,9 @@ import Image from 'next/image';
 export default function DiveIntoOurProgram() {
   const programs = [
     {
-      description: `Our Montessori students lead, teach, interact, and learn through collaboration, cooperation, and observation.`,
-      title: 'Early Childhood Program',
-      subtitle: 'Pre KG   |   LKG   |   UKG',
+      description: `Our kindergarten students lead, teach, interact, and learn through collaboration, cooperation, and observation.`,
+      title: 'Foundation Program',
+      subtitle: 'Nursery to Grade II',
       bgColor: '#A64253',
       image: '/images/basic.svg',
       headingColor: '#fff',
@@ -14,8 +14,8 @@ export default function DiveIntoOurProgram() {
     },
     {
       description: `We capture our Lower School students' enthusiasm and excitement and channel it into a program that emphasizes learning, community involvement, and global understanding.`,
-      title: 'Elementary Program',
-      subtitle: 'Grade 1 to 4',
+      title: 'Preparatory Program',
+      subtitle: 'Grade III to V',
       bgColor: '#C5D64D',
       image: '/images/nurture.svg',
       headingColor: '#2C5234',
@@ -24,8 +24,8 @@ export default function DiveIntoOurProgram() {
     },
     {
       description: `Our Middle School program is geared to meet the needs of our students, acknowledging and appreciating their requirement for structure and autonomy, as well as their desire for acceptance and success.`,
-      title: 'Upper Grade Program',
-      subtitle: 'Grade 5 to 7',
+      title: 'Middle School Program',
+      subtitle: 'Grade VI to VIII',
       bgColor: '#F3A661',
       image: '/images/prek.svg',
       headingColor: '#2C5234',
@@ -33,9 +33,9 @@ export default function DiveIntoOurProgram() {
       subColor: '#08594C',
     },
     {
-      description: `Our High School program is designed to support students by balancing their need for structure with opportunities for independence, while fostering a sense of belonging and guiding them toward success`,
-      title: 'High School Program',
-      subtitle: 'Grade 8 to 10',
+      description: `Our Secondary School program is designed to support students by balancing their need for structure with opportunities for independence, while fostering a sense of belonging and guiding them toward success`,
+      title: 'Secondary School Program',
+      subtitle: 'Grade IX to X',
       bgColor: '#A8D47E',
       image: '/images/communityy.svg',
       headingColor: '#2C5234',
@@ -95,8 +95,8 @@ export default function DiveIntoOurProgram() {
                   <h3
                     className="mb-1"
                     style={{
-                      fontFamily: 'Storybook, serif',
-                      fontWeight: 500,
+                      // fontFamily: ', serif',
+                      fontWeight: 800,
                       fontSize: 18,
                       color: program.headingColor,
                     }}
@@ -105,7 +105,7 @@ export default function DiveIntoOurProgram() {
                   </h3>
                   <p
                     style={{
-                      fontFamily: 'Nunito Sans, sans-serif',
+                      fontFamily: ' sans-serif',
                       fontWeight: 700,
                       fontSize: 14,
                       color: program.subColor,

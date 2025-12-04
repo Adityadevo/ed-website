@@ -10,13 +10,13 @@ export default function FromTheDeskSection() {
     ceo: {
       name: '',
       designation: '',
-      image: '/images/owner.svg',
+      image: '/images/secretary.svg',
       text: `It gives me immense pleasure when I realize that we are able to transform the vision of My Father in to a reality and bring light to thousands of life through the noble service of imparting EDUCATION. In the process we have overcome several hurdles and setbacks. But with courage and conviction we continued our journey and pioneered the concept of modern education. It is my earnest desire to constantly upgrade the quality of education at all levels and open new vistas in education. We are marching ahead with a motto of dedication, devotion & discipline towards achieving the stature of Secondary & senior secondary education. With the kind of motivation and support we have received over the years, we are committed and determined to achieve our goal.I feel proud when PRINCETON PUBLIC SCHOOL, my dream project makes progressive strides towards education and modernization, with holistic development as the top priorities. I wish the outstanding excellence will make PRINCETON PUBLIC SCHOOL shine as one of the best school in the city.`,
     },
     secretary: {
       name: '',
       designation: '',
-      image: 'images/secretary.svg',
+      image: '/images/owner.svg',
       text: `Education of the highest quality is the greatest gift that parents can give to their children. Your child needs exceptional academic and intellectual creativity to take on positions of leadership and face the challenges across the globe.
 Princeton Public School follows CBSE board curriculum to meet the needs of today's learners. A plethora of academic and co-curricular activities are the opportunities to all the students to discover various facets of their personalities.
 At PPS we believe that children need not always be taught to do things; instead they should be encouraged to explore, discover and learn, under the guidance of the best teachers.

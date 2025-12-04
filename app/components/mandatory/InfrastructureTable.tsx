@@ -8,8 +8,8 @@ export interface InfraRow {
 
 const defaultInfra: InfraRow[] = [
   { sl: 1, label: "Total Campus Area (sq m)", value: <span className="font-semibold">4230.48</span> },
-  { sl: 2, label: "No. & Size of Classrooms", value: <span className="font-semibold">24, 50 sq.m</span> },
-  { sl: 3, label: "No. & Size of Laboratories", value: <span className="font-semibold">5, 76 sq.m</span> },
+  { sl: 2, label: "No. & Size of Classrooms", value: <span className="font-semibold">24&50 sq.m</span> },
+  { sl: 3, label: "No. & Size of Laboratories", value: <span className="font-semibold">5&76 sq.m</span> },
   { sl: 4, label: "Internet Facility (Y / N)", value: <span className="font-semibold">Yes</span> },
   { sl: 5, label: "No. of Girls Toilet", value: <span className="font-semibold">24</span> },
   { sl: 6, label: "No. of Boys Toilet", value: <span className="font-semibold">24</span> },

@@ -11,56 +11,61 @@ const AMENITIES: Amenity[] = [
   {
     title: "Classrooms & Laboratories",
     description:
-      "State of the art classrooms and dedicated labs for experiential learning.",
+      "State of the art classrooms, separate laboratories for chemistry, biology, physics, computer, mathematics to encourage experiential learning.",
     mockIndex: 1,
-    image: "/images/audi.png",
+    image: "/images/yoga.png",
   },
   {
     title: "Modern Library",
     description:
-      "Well stocked library to facilitate independent research and learning.",
+      "Well stocked library to facilitate independent research and learning of an individual.",
     mockIndex: 2,
-    image: "/images/lib.png",
+    image: "/images/library.png",
   },
   {
     title: "Indoor Sports",
-    description: "Play area for ages 3–10 to learn through fun.",
+    description:
+      "Well equipped indoor play area for the age group of 3-10 years for learning through fun.",
     mockIndex: 4,
-    image: "/images/indoor.png",
+    image: "/images/indoor2.png",
   },
   {
     title: "Multimedia Room",
-    description: "Visual learning space for every subject.",
+    description: "Multimedia room for visual learning of every subject.",
     mockIndex: 3,
-    image: "/images/digital.png",
+    image: "/images/multimedia.png",
   },
   {
     title: "Personality Development",
     description: "Moral and ethical development programme.",
     mockIndex: 8,
-    image: "/images/dance.jpg",
+    image: "/images/personality.png",
   },
   {
     title: "School Bus",
-    description: "Transport with caretaker to ensure safe travel.",
+    description:
+      "Transport facility with a caretaker available till your kid reach safely",
     mockIndex: 9,
-    image: "/images/schoolbus.png",
+    image: "/images/bus.png",
   },
   {
     title: "CCTV",
-    description: "24/7 CCTV to monitor daily activities and ensure safety.",
+    description:
+      "24/7 CCTV in each classroom to monitor day to day activities and ensuring the safety of your wards.",
     mockIndex: 10,
     image: "/images/cctv.svg",
   },
   {
     title: "Security",
-    description: "Tight campus security to prevent intrusions.",
+    description:
+      "Tight security system in the campus so that no outsider can swoop-in.",
     mockIndex: 11,
-    image: "/images/security.svg",
+    image: "/images/security.png",
   },
   {
     title: "Fire Safety",
-    description: "Prepared environment for any emergency.",
+    description:
+      "Fire safety environment in case of any emergency - we are prepared.",
     mockIndex: 12,
     image: "/images/fire.svg",
   },
@@ -97,9 +102,6 @@ const AmenitiesGrid: React.FC = () => {
                 />
               </div>
               <div className="p-4">
-                <h4 className="text-lg font-semibold text-[#4A2F26]">
-                  {a.title}
-                </h4>
                 <p className="text-gray-600 text-sm mt-1">{a.description}</p>
               </div>
             </div>

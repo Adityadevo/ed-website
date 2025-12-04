@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function WhyPrincetonSection() {
   const features = [
     {
-      image: '/images/edu.svg',
+      image: '/images/edu2.png',
       title: 'Progressive Education',
       borderColor: 'border-[#10B981]', // green
     },

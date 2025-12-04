@@ -8,7 +8,7 @@ export interface DocumentRow {
 
 const defaultDocs: DocumentRow[] = [
   { sl: 1, title: "Affiliation Grant Letter", href: "/pdf/PPS Affiliation Grant Letter.pdf" },
-  { sl: 2, title: "Affiliation Letter", href: "/pdf/PPS Land Certificate.pdf" },
+  { sl: 2, title: "Land Certificate", href: "/pdf/PPS Land Certificate.pdf" },
   { sl: 3, title: "No Objection Certificate (NOC)", href: "/pdf/PPS NOC.pdf" },
   { sl: 4, title: "Recognition Certificate", href: "/pdf/PPS Recognition Certificate.pdf" },
   { sl: 5, title: "Building Safety Certificate", href: "/pdf/PPS Building Safety Certificate.pdf" },

@@ -13,7 +13,7 @@ export default function GalleryHero({ backgroundUrl }: GalleryHeroProps) {
   const src = backgroundUrl || '/images/gellery.svg'; // replace with your real hero image
   return (
     <section className="relative w-full">
-      <div className="relative h-[260px] md:h-[360px] lg:h-[420px] w-full">
+      <div className="relative h-[260px] md:h-[560px] lg:h-[620px] w-full">
         {/* Mock image tag - swap the src with your real image */}
         <Image
           src={src}

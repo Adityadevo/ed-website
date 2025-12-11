@@ -1,10 +1,12 @@
 'use client';
 
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { GraduationCap, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +19,7 @@ export default function Navbar() {
     // For other pages, check if pathname starts with the href
     return pathname.startsWith(href) && href !== '/';
   };
+
 
   return (
     <>
@@ -49,6 +52,7 @@ export default function Navbar() {
           </Link>
         </div>
 
+
         {/* Desktop - Right Side - Admissions Button and Nav Items */}
         <div className="hidden lg:flex flex-col items-end justify-start gap-4">
           {/* Admissions Button */}
@@ -56,6 +60,7 @@ export default function Navbar() {
             <GraduationCap size={24} />
             <span className="font-medium">Admissions</span>
           </Link>
+
 
           {/* Nav Items */}
           <div className="flex items-center gap-8">
@@ -84,6 +89,12 @@ export default function Navbar() {
               Features
             </Link>
             <Link 
+              href="/gallery" 
+              className={`hover:text-gray-300 transition-colors relative py-2 ${isActive('/gallery') ? 'active-tab' : ''}`}
+            >
+              Gallery
+            </Link>
+            <Link 
               href="/mandatory-disclosure" 
               className={`hover:text-gray-300 transition-colors relative py-2 ${isActive('/mandatory-disclosure') ? 'active-tab' : ''}`}
             >
@@ -91,6 +102,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
+
 
         {/* Mobile - Hamburger Menu Button */}
         <button
@@ -102,6 +114,7 @@ export default function Navbar() {
         </button>
       </div>
 
+
       {/* Mobile Menu - Dropdown */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4 flex flex-col gap-4 pb-4">
@@ -110,6 +123,7 @@ export default function Navbar() {
             <GraduationCap size={24} />
             <span className="font-medium">Admissions</span>
           </Link>
+
 
           {/* Nav Items - Mobile */}
           <div className="flex flex-col gap-4">

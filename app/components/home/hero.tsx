@@ -9,12 +9,14 @@ export default function HeroSection() {
 
         {/* Paragraph Text */}
         <p className="text-center text-base md:text-lg text-gray-700 max-w-4xl mx-auto">
-          Princeton Public School is one of the Virgonagar's area's leading schools, offering a distinctive and progressive approach to learning that engages students in the classroom and with the world around them.
+          Princeton Public School is one of the Virgonagar's area's leading
+          schools, offering a distinctive and progressive approach to learning
+          that engages students in the classroom and with the world around them.
         </p>
 
         {/* YouTube Video with Red Border */}
         <div className="w-full max-w-6xl mx-auto">
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full border-[8px] border-[#FF6B6B] rounded-lg shadow-lg"
               src="https://www.youtube.com/embed/pY-qc-ybe28?si=p9DNuvmfhl9QrCxq"

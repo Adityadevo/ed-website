@@ -1,4 +1,17 @@
-import Image from 'next/image';
+'use client';
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const WORDS = [
+  "Lead",
+  "Explore",
+  "Connect",
+  "Create",
+  "Grow",
+  "Discover",
+  "Play",
+];
 
 type AdmissionsHeroProps = {
   title1?: string;
@@ -9,15 +22,32 @@ type AdmissionsHeroProps = {
 };
 
 export default function AdmissionsHero({
-  title1 = 'Admissions Open',
-  title2 = '2026-27',
-  subtitle = 'CBSE Syllabus',
+  title1 = "Admissions Open",
+  title2 = "2026-27",
+  subtitle = "CBSE Syllabus",
   showLead = true,
-  leadText = 'Lead',
+  leadText,
 }: AdmissionsHeroProps) {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % WORDS.length);
+        setVisible(true);
+      }, 200);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // ✅ FIXED: Removed .toLowerCase()
+  const currentWord = leadText ?? WORDS[index];
+  
   return (
     <section className="relative w-full h-[500px] md:h-[600px] lg:h-[700px]">
-      {/* Background Image */}
       <Image
         src="/images/admissions.png"
         alt="School Campus"
@@ -26,12 +56,9 @@ export default function AdmissionsHero({
         priority
       />
 
-      {/* Overlay for better text visibility */}
       <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-start justify-center px-4 md:px-8 lg:px-[100px] text-white">
-        {/* Main Heading - 96px */}
         {title1 && (
           <h1 className="text-5xl md:text-7xl lg:text-[96px] font-bold leading-tight mb-2 md:mb-4">
             {title1}
@@ -43,7 +70,6 @@ export default function AdmissionsHero({
           </h2>
         )}
 
-        {/* Subtitle - 36px */}
         {subtitle && (
           <p className="text-2xl md:text-3xl lg:text-[36px] font-semibold mb-6 md:mb-12">
             {subtitle}
@@ -51,11 +77,16 @@ export default function AdmissionsHero({
         )}
       </div>
 
-      {/* Lead - 72px (Centered) */}
       {showLead && (
         <div className="absolute bottom-12 md:bottom-32 left-1/2 -translate-x-1/2 z-20">
           <h3 className="text-4xl md:text-6xl lg:text-[72px] font-bold text-white text-center">
-            {leadText}
+            <span
+              className={`inline-block transition-opacity duration-200 ${
+                visible ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {currentWord}
+            </span>
           </h3>
         </div>
       )}

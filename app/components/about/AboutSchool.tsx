@@ -30,7 +30,7 @@ export default function AboutOurSchoolSection() {
               {/* Middle Image - Student Writing */}
               <div className="absolute top-[400px] right-[362px] w-[520px] h-[178px]  overflow-hidden z-20">
                 <Image
-                  src="/images/play.jpeg"
+                  src="/images/students.jpg"
                   alt="Student writing"
                   fill
                   className="object-cover"
@@ -73,7 +73,7 @@ export default function AboutOurSchoolSection() {
             </div>
             <div className="w-full h-[200px]  overflow-hidden">
               <Image
-                src="/images/play.jpeg"
+                src="/images/students.jpg"
                 alt="Student writing"
                 width={400}
                 height={200}

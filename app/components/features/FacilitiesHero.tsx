@@ -6,7 +6,7 @@ export default function StateOfArtFacilities() {
       id: 1,
       alt: "Classroom",
       borderColor: "border-green-500",
-      src: "/images/classroom.svg",
+      src: "/images/eqq.jpg",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function StateOfArtFacilities() {
       id: 6,
       alt: "Sports Facility",
       borderColor: "border-red-400",
-      src: "/images/fac6.svg",
+      src: "/images/tt.jpg",
     },
   ];
 

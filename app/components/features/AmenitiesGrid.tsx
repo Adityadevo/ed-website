@@ -13,7 +13,7 @@ const AMENITIES: Amenity[] = [
     description:
       "State of the art classrooms, separate laboratories for chemistry, biology, physics, computer, mathematics to encourage experiential learning.",
     mockIndex: 1,
-    image: "/images/yoga.png",
+    image: "/images/classlab.png",
   },
   {
     title: "Modern Library",
@@ -27,7 +27,7 @@ const AMENITIES: Amenity[] = [
     description:
       "Well equipped indoor play area for the age group of 3-10 years for learning through fun.",
     mockIndex: 4,
-    image: "/images/indoor2.png",
+    image: "/images/computerlab.png",
   },
   {
     title: "Multimedia Room",
@@ -39,7 +39,7 @@ const AMENITIES: Amenity[] = [
     title: "Personality Development",
     description: "Moral and ethical development programme.",
     mockIndex: 8,
-    image: "/images/personality.png",
+    image: "/images/personaldev.png",
   },
   {
     title: "School Bus",

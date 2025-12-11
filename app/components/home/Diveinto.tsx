@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+
 export default function DiveIntoOurProgram() {
   const programs = [
     {
@@ -44,6 +45,7 @@ export default function DiveIntoOurProgram() {
     },
   ];
 
+
   return (
     <section className="py-16 px-4 md:px-8 lg:px-[100px] bg-[#FAFAF0]">
       <div className="flex flex-col gap-6 items-center max-w-7xl mx-auto">
@@ -51,12 +53,14 @@ export default function DiveIntoOurProgram() {
           Dive Into Our Program
         </h2>
 
+
         <p className="text-center text-base md:text-lg text-gray-700 max-w-4xl">
-          Take a moment to explore our rigorous and joyful program that nurtures each student's curiosity for learning. Interested in learning more?{' '}
-          <span className="underline font-semibold cursor-pointer">Download our Viewbook.</span>
+          Take a moment to explore our rigorous and joyful program that nurtures each student's curiosity for learning.
+         
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full mt-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full mt-6 justify-items-center">
           {programs.map((program, index) => (
             <div
               key={index}
@@ -79,6 +83,7 @@ export default function DiveIntoOurProgram() {
                   />
                 </div>
               )}
+
 
               <div className="relative z-10 flex flex-col h-full justify-between">
                 <p

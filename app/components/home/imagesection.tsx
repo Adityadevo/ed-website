@@ -1,50 +1,50 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function FeaturesSection() {
   const features = [
     {
-      image: '/images/bgchild.jpeg',
-      text: '',
-      bgColor: '',
+      image: "/images/bgchild.webp",
+      text: "",
+      bgColor: "",
     },
     {
-      image: '/images/basic.svg',
-      text: 'Beyond the Basics - Arts, Language, PE and more',
-      bgColor: '#8F2133',
-      textColor: 'text-white',
+      image: "/images/basic.svg",
+      text: "Beyond the Basics - Arts, Language, PE and more",
+      bgColor: "#8F2133",
+      textColor: "text-white",
     },
     {
-      image: '/images/girl.png',
-      text: '',
-      bgColor: '',
+      image: "/images/girl.webp",
+      text: "",
+      bgColor: "",
     },
     {
-      image: '/images/nurture.svg',
-      text: 'Children are known and nurtured',
-      bgColor: '#C5D64D',
-      textColor: 'text-[#2C5234]',
+      image: "/images/nurture.svg",
+      text: "Children are known and nurtured",
+      bgColor: "#C5D64D",
+      textColor: "text-[#2C5234]",
     },
     {
-      image: '/images/communityy.svg',
-      text: 'An intentionally diverse, inclusive community',
-      bgColor: '#A5D465',
-      textColor: 'text-[#2C5234]',
+      image: "/images/communityy.svg",
+      text: "An intentionally diverse, inclusive community",
+      bgColor: "#A5D465",
+      textColor: "text-[#2C5234]",
     },
     {
-      image: '/images/children.svg',
-      text: '',
-      bgColor: '',
+      image: "/images/children.svg",
+      text: "",
+      bgColor: "",
     },
     {
-      image: '/images/prek.svg',
-      text: 'The Pre KG to X Advantage',
-      bgColor: '#EAA05B',
-      textColor: 'text-white',
+      image: "/images/prek.svg",
+      text: "The Pre KG to X Advantage",
+      bgColor: "#EAA05B",
+      textColor: "text-white",
     },
     {
-      image: '/images/play.jpeg',
-      text: '',
-      bgColor: '',
+      image: "/images/play.webp",
+      text: "",
+      bgColor: "",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
           <div
             key={index}
             className="relative w-full h-[300px] md:h-[360px] lg:h-[360px]"
-            style={{ backgroundColor: feature.bgColor || 'transparent' }}
+            style={{ backgroundColor: feature.bgColor || "transparent" }}
           >
             {/* Background Image (with pattern already in it) */}
             <Image
@@ -67,7 +67,9 @@ export default function FeaturesSection() {
 
             {/* Text Overlay - 24px */}
             {feature.text && (
-              <div className={`absolute  inset-0 z-10 flex items-center justify-center p-8 ${feature.textColor}`}>
+              <div
+                className={`absolute  inset-0 z-10 flex items-center justify-center p-8 ${feature.textColor}`}
+              >
                 <h3 className="text-xl md:text-[20px] max-w-[200px] font-bold text-center leading-normal">
                   {feature.text}
                 </h3>

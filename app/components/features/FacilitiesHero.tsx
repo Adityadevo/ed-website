@@ -16,7 +16,7 @@ export default function StateOfArtFacilities() {
             {/* Image 1 */}
             <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 border-green-500">
               <Image
-                src="/images/eqq.jpg"
+                src="/images/eqq.webp"
                 alt="Classroom"
                 fill
                 className="object-cover"
@@ -77,7 +77,7 @@ export default function StateOfArtFacilities() {
             {/* Image 6 */}
             <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 border-red-400 mr-8 xl:mr-12">
               <Image
-                src="/images/toy.jpg"
+                src="/images/toy.webp"
                 alt="Sports Facility"
                 fill
                 className="object-cover"
@@ -89,27 +89,57 @@ export default function StateOfArtFacilities() {
         {/* Mobile & Tablet View - Grid */}
         <div className="grid grid-cols-2 gap-6 lg:hidden">
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-green-500">
-            <Image src="/images/eqq.jpg" alt="Classroom" fill className="object-cover" />
+            <Image
+              src="/images/eqq.webp"
+              alt="Classroom"
+              fill
+              className="object-cover"
+            />
           </div>
-          
+
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-blue-500">
-            <Image src="/images/fac2.svg" alt="Play Area" fill className="object-cover" />
+            <Image
+              src="/images/fac2.svg"
+              alt="Play Area"
+              fill
+              className="object-cover"
+            />
           </div>
-          
+
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-red-500">
-            <Image src="/images/fac3.svg" alt="School Building" fill className="object-cover" />
+            <Image
+              src="/images/fac3.svg"
+              alt="School Building"
+              fill
+              className="object-cover"
+            />
           </div>
-          
+
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-blue-600">
-            <Image src="/images/fac4.svg" alt="Playground" fill className="object-cover" />
+            <Image
+              src="/images/fac4.svg"
+              alt="Playground"
+              fill
+              className="object-cover"
+            />
           </div>
-          
+
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-yellow-400">
-            <Image src="/images/fac5.svg" alt="Microscope" fill className="object-cover" />
+            <Image
+              src="/images/fac5.svg"
+              alt="Microscope"
+              fill
+              className="object-cover"
+            />
           </div>
-          
+
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-red-400">
-            <Image src="/images/tt.jpg" alt="Sports Facility" fill className="object-cover" />
+            <Image
+              src="/images/tt.webp"
+              alt="Sports Facility"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

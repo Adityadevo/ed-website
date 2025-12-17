@@ -13,40 +13,40 @@ const AMENITIES: Amenity[] = [
     description:
       "State of the art classrooms, separate laboratories for chemistry, biology, physics, computer, mathematics to encourage experiential learning.",
     mockIndex: 1,
-    image: "/images/classlab.png",
+    image: "/images/classlab.webp",
   },
   {
     title: "Modern Library",
     description:
       "Well stocked library to facilitate independent research and learning of an individual.",
     mockIndex: 2,
-    image: "/images/library.png",
+    image: "/images/library.webp",
   },
   {
     title: "Indoor Sports",
     description:
       "Well equipped indoor play area for the age group of 3-10 years for learning through fun.",
     mockIndex: 4,
-    image: "/images/computerlab.png",
+    image: "/images/computerlab.webp",
   },
   {
     title: "Multimedia Room",
     description: "Multimedia room for visual learning of every subject.",
     mockIndex: 3,
-    image: "/images/multimedia.png",
+    image: "/images/multimedia.webp",
   },
   {
     title: "Personality Development",
     description: "Moral and ethical development programme.",
     mockIndex: 8,
-    image: "/images/personaldev.png",
+    image: "/images/personaldev.webp",
   },
   {
     title: "School Bus",
     description:
       "Transport facility with a caretaker available till your kid reach safely",
     mockIndex: 9,
-    image: "/images/bus.png",
+    image: "/images/bus.webp",
   },
   {
     title: "CCTV",
@@ -60,7 +60,7 @@ const AMENITIES: Amenity[] = [
     description:
       "Tight security system in the campus so that no outsider can swoop-in.",
     mockIndex: 11,
-    image: "/images/security.png",
+    image: "/images/security.webp",
   },
   {
     title: "Fire Safety",

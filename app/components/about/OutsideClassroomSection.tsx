@@ -1,36 +1,36 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function OutsideClassroomSection() {
   const activities = [
     {
-      image: '/images/yogga.jpg',
-      bgColor: 'bg-[#B08D7D]',
-      text: 'Yoga, meditation and prayer form an integral part of the school curriculum so that students have a calm and unburdened mind to start a fresh day.',
+      image: "/images/yogga.webp",
+      bgColor: "bg-[#B08D7D]",
+      text: "Yoga, meditation and prayer form an integral part of the school curriculum so that students have a calm and unburdened mind to start a fresh day.",
     },
     {
-      image: '/images/coc.jpg',
-      bgColor: 'bg-[#C5D64D]',
-      text: 'A mandatory co-curricular programme ensures that children step out of their comfort zones and endeavor to learn new skills.',
+      image: "/images/coc.webp",
+      bgColor: "bg-[#C5D64D]",
+      text: "A mandatory co-curricular programme ensures that children step out of their comfort zones and endeavor to learn new skills.",
     },
     {
-      image: '/images/kathak.jpg',
-      bgColor: 'bg-[#F3A661]',
-      text: 'Celebrations of cultural festivals and historic occasions both national and international foster a spirit of togetherness amongst children.',
+      image: "/images/kathak.webp",
+      bgColor: "bg-[#F3A661]",
+      text: "Celebrations of cultural festivals and historic occasions both national and international foster a spirit of togetherness amongst children.",
     },
     {
-      image: '/images/run.jpg',
-      bgColor: 'bg-[#A8D47E]',
-      text: 'Inter-house and school wide events are organized to inculcate a spirit of loyalty and healthy competition in the children and to explore and showcase their talents.',
+      image: "/images/run.webp",
+      bgColor: "bg-[#A8D47E]",
+      text: "Inter-house and school wide events are organized to inculcate a spirit of loyalty and healthy competition in the children and to explore and showcase their talents.",
     },
     {
-      image: '/images/audi.png',
-      bgColor: 'bg-[#F3A661]',
-      text: 'Eminent guests/motivational speakers/ career counselors frequently visit the campus to hold meaningful interactions with students.',
+      image: "/images/audi.webp",
+      bgColor: "bg-[#F3A661]",
+      text: "Eminent guests/motivational speakers/ career counselors frequently visit the campus to hold meaningful interactions with students.",
     },
     {
-      image: '/images/swim.jpg',
-      bgColor: 'bg-[#F5C4D8]',
-      text: 'Excursions, field trips and off campus activities are organized frequently to explore varied areas of interest and learning.',
+      image: "/images/swim.webp",
+      bgColor: "bg-[#F5C4D8]",
+      text: "Excursions, field trips and off campus activities are organized frequently to explore varied areas of interest and learning.",
     },
   ];
 

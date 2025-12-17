@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -45,11 +45,11 @@ export default function AdmissionsHero({
 
   // ✅ FIXED: Removed .toLowerCase()
   const currentWord = leadText ?? WORDS[index];
-  
+
   return (
     <section className="relative w-full h-[500px] md:h-[600px] lg:h-[700px]">
       <Image
-        src="/images/admissions.png"
+        src="/images/admissions.webp"
         alt="School Campus"
         fill
         className="object-cover brightness-75"

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function AboutOurSchoolSection() {
   return (
@@ -12,7 +12,17 @@ export default function AboutOurSchoolSection() {
               ABOUT OUR SCHOOL
             </h2>
             <p className="text-lg text-gray-800 leading-relaxed">
-              Princeton Public School is a KG to 10th co-educational school established to make children well-rounded and self dependent individuals, founded in the year 2007 ever since we are committed to quality education. We have a wonderful environment and facilities for active learning physical and mental development of every student. A team of well qualified and experienced teachers and support staff who are committed to serving our school in becoming a leading educational institute. The entire gamut of activities at PPS reflects its objective of nurturing young children and making them responsible adults who can make a positive contribution to the world.
+              Princeton Public School is a KG to 10th co-educational school
+              established to make children well-rounded and self dependent
+              individuals, founded in the year 2007 ever since we are committed
+              to quality education. We have a wonderful environment and
+              facilities for active learning physical and mental development of
+              every student. A team of well qualified and experienced teachers
+              and support staff who are committed to serving our school in
+              becoming a leading educational institute. The entire gamut of
+              activities at PPS reflects its objective of nurturing young
+              children and making them responsible adults who can make a
+              positive contribution to the world.
             </p>
 
             {/* Images Container - Absolute Position relative to text container */}
@@ -20,7 +30,7 @@ export default function AboutOurSchoolSection() {
               {/* Top Right Image - Classroom Scene */}
               <div className="absolute top-0 right-4 w-[347px] h-[295px]  overflow-hidden z-30">
                 <Image
-                  src="/images/audi.png"
+                  src="/images/audi.webp"
                   alt="Classroom activity"
                   fill
                   className="object-cover"
@@ -30,7 +40,7 @@ export default function AboutOurSchoolSection() {
               {/* Middle Image - Student Writing */}
               <div className="absolute top-[400px] right-[362px] w-[520px] h-[178px]  overflow-hidden z-20">
                 <Image
-                  src="/images/students.jpg"
+                  src="/images/students.webp"
                   alt="Student writing"
                   fill
                   className="object-cover"
@@ -40,7 +50,7 @@ export default function AboutOurSchoolSection() {
               {/* Bottom Left Image - Rock Climbing */}
               <div className="absolute top-[280px] right-4 w-[347px] h-[295px]  overflow-hidden z-10">
                 <Image
-                  src="/images/dance.jpg"
+                  src="/images/dance.webp"
                   alt="Rock climbing activity"
                   fill
                   className="object-cover"
@@ -57,14 +67,24 @@ export default function AboutOurSchoolSection() {
               ABOUT OUR SCHOOL
             </h2>
             <p className="text-base md:text-lg text-gray-800 leading-relaxed">
-              Princeton Public School is a KG to 10th co-educational school established to make children well-rounded and self dependent individuals, founded in the year 2007 ever since we are committed to quality education. We have a wonderful environment and facilities for active learning physical and mental development of every student. A team of well qualified and experienced teachers and support staff who are committed to serving our school in becoming a leading educational institute. The entire gamut of activities at PPS reflects its objective of nurturing young children and making them responsible adults who can make a positive contribution to the world.
+              Princeton Public School is a KG to 10th co-educational school
+              established to make children well-rounded and self dependent
+              individuals, founded in the year 2007 ever since we are committed
+              to quality education. We have a wonderful environment and
+              facilities for active learning physical and mental development of
+              every student. A team of well qualified and experienced teachers
+              and support staff who are committed to serving our school in
+              becoming a leading educational institute. The entire gamut of
+              activities at PPS reflects its objective of nurturing young
+              children and making them responsible adults who can make a
+              positive contribution to the world.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div className="w-full h-[250px] overflow-hidden">
               <Image
-                src="/images/audi.png"
+                src="/images/audi.webp"
                 alt="Classroom activity"
                 width={400}
                 height={250}
@@ -73,7 +93,7 @@ export default function AboutOurSchoolSection() {
             </div>
             <div className="w-full h-[200px]  overflow-hidden">
               <Image
-                src="/images/students.jpg"
+                src="/images/students.webp"
                 alt="Student writing"
                 width={400}
                 height={200}
@@ -82,7 +102,7 @@ export default function AboutOurSchoolSection() {
             </div>
             <div className="w-full h-[250px] border-6  overflow-hidden">
               <Image
-                src="/images/dance.jpg"
+                src="/images/dance.webp"
                 alt="Rock climbing activity"
                 width={400}
                 height={250}

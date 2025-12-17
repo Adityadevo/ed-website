@@ -1,27 +1,27 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function WhyPrincetonSection() {
   const features = [
     {
-      image: '/images/edu2.png',
-      title: 'Progressive Education',
-      borderColor: 'border-[#10B981]', // green
+      image: "/images/edu2.webp",
+      title: "Progressive Education",
+      borderColor: "border-[#10B981]", // green
     },
     {
-      image: '/images/city.png',
-      title: 'City Campus',
-      borderColor: 'border-[#3B82F6]', // blue
+      image: "/images/city.webp",
+      title: "City Campus",
+      borderColor: "border-[#3B82F6]", // blue
     },
     {
-      image: '/images/playarea.png',
-      title: 'A School for Children',
-      borderColor: 'border-[#4C231A]', // brown
+      image: "/images/playarea.webp",
+      title: "A School for Children",
+      borderColor: "border-[#4C231A]", // brown
     },
     {
-      image: '/images/fondation.png',
-      title: 'A Strong Foundation',
-      borderColor: 'border-[#FF6B6B]', // red
+      image: "/images/fondation.webp",
+      title: "A Strong Foundation",
+      borderColor: "border-[#FF6B6B]", // red
     },
   ];
 
@@ -37,7 +37,9 @@ export default function WhyPrincetonSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full max-w-7xl">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center gap-4">
-              <div className={`rounded-full overflow-hidden border-8 ${feature.borderColor} w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[290px] lg:h-[290px]`}>
+              <div
+                className={`rounded-full overflow-hidden border-8 ${feature.borderColor} w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[290px] lg:h-[290px]`}
+              >
                 <Image
                   src={feature.image}
                   alt={feature.title}
@@ -54,12 +56,14 @@ export default function WhyPrincetonSection() {
         </div>
 
         {/* Button - Mobile Optimized */}
-        <Link 
-          href="/features" 
+        <Link
+          href="/features"
           className="inline-block bg-[#4C231A] text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-medium uppercase tracking-wide hover:bg-[#3A1B13] transition-colors shadow-lg text-center max-w-[280px] sm:max-w-none"
         >
           <span className="block sm:hidden">Learn More</span>
-          <span className="hidden sm:block">Learn More About What Makes Us Special</span>
+          <span className="hidden sm:block">
+            Learn More About What Makes Us Special
+          </span>
         </Link>
       </div>
     </section>

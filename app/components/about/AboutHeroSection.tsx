@@ -1,5 +1,4 @@
-import Image from 'next/image';
-
+import Image from "next/image";
 
 export default function AboutHeroSection() {
   return (
@@ -15,7 +14,6 @@ export default function AboutHeroSection() {
           </p>
         </div>
 
-
         {/* Right Side - Overlapping Circular Images */}
         <div className="relative flex-shrink-0 w-full lg:w-auto flex items-center justify-center lg:justify-end">
           <div className="relative w-[350px] h-[300px] md:w-[600px] md:h-[450px]">
@@ -29,22 +27,20 @@ export default function AboutHeroSection() {
               />
             </div>
 
-
             {/* Blue Circle - Bottom Left */}
             <div className="absolute bottom-0 left-0 w-[180px] h-[180px] md:w-[290px] md:h-[290px] rounded-full border-4 md:border-8 border-[#4A90E2] overflow-hidden z-20">
               <Image
-                src="/images/2007.jpg"
+                src="/images/2007.webp"
                 alt="School building"
                 fill
                 className="object-cover"
               />
             </div>
 
-
             {/* Green Circle - Right Middle - HIGHEST Z-INDEX */}
             <div className="absolute top-[90px] right-[30px] md:top-[140px] md:right-[70px] w-[180px] h-[180px] md:w-[290px] md:h-[290px] rounded-full border-4 md:border-8 border-[#10B981] overflow-hidden z-30">
               <Image
-                src="/images/teacher.jpeg"
+                src="/images/teacher.webp"
                 alt="Teacher at blackboard"
                 fill
                 className="object-cover"

@@ -4,17 +4,17 @@ const managementMembersTop = [
   {
     name: "Mr Anwar Pasha",
     role: "President",
-    image: "/images/members/anwar.png",
+    image: "/images/members/anwar.webp",
   },
   {
     name: "Mrs Sheba Reuben",
     role: "Secretary",
-    image: "/images/members/sheba.png",
+    image: "/images/members/sheba.webp",
   },
   {
     name: "Dr. Rudal Dubey",
     role: "Member SMC",
-    image: "/images/members/rudal.png",
+    image: "/images/members/rudal.webp",
   },
 ];
 
@@ -22,22 +22,22 @@ const managementMembersBottom = [
   {
     name: "Mrs. M Shobha",
     role: "Member, Parent Representative",
-    image: "/images/members/shobha.png",
+    image: "/images/members/shobha.webp",
   },
   {
     name: "Mrs. Roopa K",
     role: "Member, Teacher Representative",
-    image: "/images/members/roopa.png",
+    image: "/images/members/roopa.webp",
   },
   {
     name: "Mrs. Sameena Kausar I",
     role: "Member, Teacher Representative",
-    image: "/images/members/sameena.png",
+    image: "/images/members/sameena.webp",
   },
   {
     name: "Mr. Meesala Lokeswara",
     role: "Member, Parent Representative",
-    image: "/images/members/meesala.png",
+    image: "/images/members/meesala.webp",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function ManagementCommitteeSection() {
           <div className="hidden md:block absolute -top-10 right-0 lg:-top-8 md:right-6 z-10 w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] rounded-full  flex items-center justify-center ">
             <div className="relative w-[100px] h-[100px] lg:w-[120px] lg:h-[120px]">
               <Image
-                src="/images/members/posco.png"
+                src="/images/members/posco.webp"
                 alt="POCSO Logo"
                 fill
                 className="object-contain"

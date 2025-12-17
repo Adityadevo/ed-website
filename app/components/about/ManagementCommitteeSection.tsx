@@ -7,7 +7,7 @@ const managementMembersTop = [
     image: "/images/members/anwar.png",
   },
   {
-    name: "Sheeba Reuben",
+    name: "Mrs Sheba Reuben",
     role: "Secretary",
     image: "/images/members/sheeba.png",
   },

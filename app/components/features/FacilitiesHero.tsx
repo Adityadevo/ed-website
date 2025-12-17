@@ -1,48 +1,6 @@
 import Image from "next/image";
 
 export default function StateOfArtFacilities() {
-  const leftFacilities = [
-    {
-      id: 1,
-      alt: "Classroom",
-      borderColor: "border-green-500",
-      src: "/images/eqq.jpg",
-    },
-    {
-      id: 2,
-      alt: "Play Area",
-      borderColor: "border-blue-500",
-      src: "/images/fac2.svg",
-    },
-    {
-      id: 3,
-      alt: "School Building",
-      borderColor: "border-red-500",
-      src: "/images/fac3.svg",
-    },
-  ];
-
-  const rightFacilities = [
-    {
-      id: 4,
-      alt: "Playground",
-      borderColor: "border-blue-600",
-      src: "/images/fac4.svg",
-    },
-    {
-      id: 5,
-      alt: "Microscope",
-      borderColor: "border-yellow-400",
-      src: "/images/fac5.svg",
-    },
-    {
-      id: 6,
-      alt: "Sports Facility",
-      borderColor: "border-red-400",
-      src: "/images/tt.jpg",
-    },
-  ];
-
   return (
     <section className="relative bg-[#FDF8F3] py-16 px-8">
       <div className="max-w-7xl mx-auto">
@@ -55,27 +13,35 @@ export default function StateOfArtFacilities() {
         <div className="hidden lg:flex items-center justify-between gap-8 xl:gap-16">
           {/* Left Column - 3 Circles */}
           <div className="flex flex-col gap-8 xl:gap-12">
-            {leftFacilities.map((facility, index) => (
-              <div
-                key={facility.id}
-                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 ${
-                  facility.borderColor
-                } ${
-                  index === 1
-                    ? "ml-16 xl:ml-20"
-                    : index === 2
-                    ? "ml-8 xl:ml-12"
-                    : ""
-                }`}
-              >
-                <Image
-                  src={facility.src}
-                  alt={facility.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+            {/* Image 1 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 border-green-500">
+              <Image
+                src="/images/eqq.jpg"
+                alt="Classroom"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Image 2 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden   ml-16 xl:ml-20">
+              <Image
+                src="/images/fac2.svg"
+                alt="Play Area"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Image 3 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden  ml-8 xl:ml-12">
+              <Image
+                src="/images/fac3.svg"
+                alt="School Building"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* Center Text */}
@@ -88,45 +54,63 @@ export default function StateOfArtFacilities() {
 
           {/* Right Column - 3 Circles */}
           <div className="flex flex-col gap-8 xl:gap-12 items-end">
-            {rightFacilities.map((facility, index) => (
-              <div
-                key={facility.id}
-                className={`relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-2 ${
-                  facility.borderColor
-                } ${
-                  index === 1
-                    ? "mr-16 xl:mr-20"
-                    : index === 2
-                    ? "mr-8 xl:mr-12"
-                    : ""
-                }`}
-              >
-                <Image
-                  src={facility.src}
-                  alt={facility.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+            {/* Image 4 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden  border-blue-600">
+              <Image
+                src="/images/fac4.svg"
+                alt="Playground"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Image 5 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden  mr-16 xl:mr-20">
+              <Image
+                src="/images/fac5.svg"
+                alt="Microscope"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Image 6 */}
+            <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 border-red-400 mr-8 xl:mr-12">
+              <Image
+                src="/images/tt.jpg"
+                alt="Sports Facility"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
 
         {/* Mobile & Tablet View - Grid */}
         <div className="grid grid-cols-2 gap-6 lg:hidden">
-          {[...leftFacilities, ...rightFacilities].map((facility) => (
-            <div
-              key={`mobile-${facility.id}`}
-              className={`relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 ${facility.borderColor}`}
-            >
-              <Image
-                src={facility.src}
-                alt={facility.alt}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-green-500">
+            <Image src="/images/eqq.jpg" alt="Classroom" fill className="object-cover" />
+          </div>
+          
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-blue-500">
+            <Image src="/images/fac2.svg" alt="Play Area" fill className="object-cover" />
+          </div>
+          
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-red-500">
+            <Image src="/images/fac3.svg" alt="School Building" fill className="object-cover" />
+          </div>
+          
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-blue-600">
+            <Image src="/images/fac4.svg" alt="Playground" fill className="object-cover" />
+          </div>
+          
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-yellow-400">
+            <Image src="/images/fac5.svg" alt="Microscope" fill className="object-cover" />
+          </div>
+          
+          <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-red-400">
+            <Image src="/images/tt.jpg" alt="Sports Facility" fill className="object-cover" />
+          </div>
         </div>
       </div>
     </section>

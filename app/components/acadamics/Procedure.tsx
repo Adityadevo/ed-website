@@ -55,7 +55,7 @@ export default function ProcedureSection() {
               {/* Main Image */}
               <div className="absolute top-4 right-4 md:top-6 md:right-6 w-[280px] h-[380px] md:w-[420px] md:h-[520px] lg:w-[550px] lg:h-[620px] rounded-[50px] z-20">
                 <Image
-                  src="/images/procedure.svg"
+                  src="/images/boy.png"
                   alt="Student with backpack"
                   fill
                   className="object-cover"

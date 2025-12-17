@@ -77,7 +77,7 @@ export default function StateOfArtFacilities() {
             {/* Image 6 */}
             <div className="relative w-48 h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-6 border-red-400 mr-8 xl:mr-12">
               <Image
-                src="/images/tt.jpg"
+                src="/images/toy.jpg"
                 alt="Sports Facility"
                 fill
                 className="object-cover"

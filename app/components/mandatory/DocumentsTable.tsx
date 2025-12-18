@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export interface DocumentRow {
   sl: number;
@@ -7,15 +8,43 @@ export interface DocumentRow {
 }
 
 const defaultDocs: DocumentRow[] = [
-  { sl: 1, title: "Affiliation Grant Letter", href: "/pdf/PPS Affiliation Grant Letter.pdf" },
+  {
+    sl: 1,
+    title: "Affiliation Grant Letter",
+    href: "/pdf/PPS Affiliation Grant Letter.pdf",
+  },
   { sl: 2, title: "Land Certificate", href: "/pdf/PPS Land Certificate.pdf" },
   { sl: 3, title: "No Objection Certificate (NOC)", href: "/pdf/PPS NOC.pdf" },
-  { sl: 4, title: "Recognition Certificate", href: "/pdf/PPS Recognition Certificate.pdf" },
-  { sl: 5, title: "Building Safety Certificate", href: "/pdf/PPS Building Safety Certificate.pdf" },
-  { sl: 6, title: "Fire Safety Certificate", href: "/pdf/PPS Fire Safety Certificate.pdf" },
-  { sl: 7, title: "Drinking Water Test Certificate", href: "/pdf/PPS Drinking Water Test Report.pdf" },
-  { sl: 8, title: "Fee Structure of the School", href: "/pdf/PPS Fee Structure.pdf" },
-  { sl: 9, title: "Current Academic Calendar", href: "/pdf/PPS Academic Calendar.pdf" },
+  {
+    sl: 4,
+    title: "Recognition Certificate",
+    href: "/pdf/PPS Recognition Certificate.pdf",
+  },
+  {
+    sl: 5,
+    title: "Building Safety Certificate",
+    href: "/pdf/PPS Building Safety Certificate.pdf",
+  },
+  {
+    sl: 6,
+    title: "Fire Safety Certificate",
+    href: "/pdf/PPS Fire Safety Certificate.pdf",
+  },
+  {
+    sl: 7,
+    title: "Drinking Water Test Certificate",
+    href: "/pdf/PPS Drinking Water Test Report.pdf",
+  },
+  {
+    sl: 8,
+    title: "Fee Structure of the School",
+    href: "/pdf/PPS Fee Structure.pdf",
+  },
+  {
+    sl: 9,
+    title: "Current Academic Calendar",
+    href: "/pdf/PPS Academic Calendar.pdf",
+  },
   { sl: 10, title: "Parent Teacher Association", href: "/pdf/PPS PTA.pdf" },
   { sl: 11, title: "Staff Details", href: "/pdf/PPS Staff Details.pdf" },
 ];
@@ -39,9 +68,15 @@ const DocumentsTable: React.FC<Props> = ({
           <table className="min-w-full border-separate border-spacing-x-2 border-spacing-y-3">
             <thead>
               <tr className="bg-[#E79A58]">
-                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base rounded-l-lg">SL. No</th>
-                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base">Document Name</th>
-                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base rounded-r-lg">Download</th>
+                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base rounded-l-lg">
+                  SL. No
+                </th>
+                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base">
+                  Document Name
+                </th>
+                <th className="px-6 py-4 text-center text-[#4A2F26] font-bold text-base rounded-r-lg">
+                  Download
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -52,21 +87,31 @@ const DocumentsTable: React.FC<Props> = ({
                     i % 2 === 1 ? "bg-blue-50/60" : "bg-amber-50/60"
                   } rounded-lg text-center`}
                 >
-                  <td className="px-6 py-6 align-middle text-black font-semibold">{row.sl}</td>
-                  <td className="px-6 py-6 align-middle text-black font-normal">{row.title}</td>
+                  <td className="px-6 py-6 align-middle text-black font-semibold">
+                    {row.sl}
+                  </td>
+                  <td className="px-6 py-6 align-middle text-black font-normal">
+                    {row.title}
+                  </td>
                   <td className="px-6 py-6 align-middle">
                     {row.href ? (
                       <div className="flex items-center justify-center space-x-2">
-                      <a
-                        href={row.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:opacity-80 transition-opacity"
-                        title="Open in new tab"
-                      >
-                        <img src="/images/pdf.svg" alt="PDF Icon" className="h-10 w-10" />
-                      </a>
-                      {/* <a
+                        <a
+                          href={row.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:opacity-80 transition-opacity"
+                          title="Open in new tab"
+                        >
+                          <Image
+                            src="/images/pdf.svg"
+                            alt="PDF Icon"
+                            width={40}
+                            height={40}
+                            className="h-10 w-10"
+                          />
+                        </a>
+                        {/* <a
                         href={row.href}
                         download
                         className="text-gray-600 hover:text-[#4A2F26] transition-colors"
@@ -78,7 +123,7 @@ const DocumentsTable: React.FC<Props> = ({
                           <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                       </a> */}
-                    </div>
+                      </div>
                     ) : (
                       <span className="inline-flex items-center justify-center text-gray-500">
                         N/A

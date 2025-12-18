@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Amenity = {
   title: string;
@@ -94,11 +95,13 @@ const AmenitiesGrid: React.FC = () => {
             >
               <div className="w-full">
                 {/* mock image tag - replace src with your real images */}
-                <img
+                <Image
                   src={a.image}
                   alt={a.title}
+                  width={400}
+                  height={300}
                   className="w-full h-auto object-contain"
-                  loading="lazy"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
               </div>
               <div className="p-4">

@@ -135,7 +135,7 @@ export default function StateOfArtFacilities() {
 
           <div className="relative w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-4 border-red-400">
             <Image
-              src="/images/tt.webp"
+              src="/images/toy.webp"
               alt="Sports Facility"
               fill
               className="object-cover"

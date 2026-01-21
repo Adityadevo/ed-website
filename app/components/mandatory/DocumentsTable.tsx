@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+
 export interface DocumentRow {
   sl: number;
   title: string;
   href?: string;
 }
+
 
 const defaultDocs: DocumentRow[] = [
   {
@@ -49,10 +51,12 @@ const defaultDocs: DocumentRow[] = [
   { sl: 11, title: "Staff Details", href: "/pdf/PPS Staff Details.pdf" },
 ];
 
+
 interface Props {
   title?: string;
   rows?: DocumentRow[];
 }
+
 
 const DocumentsTable: React.FC<Props> = ({
   title = "Documents and Information",
@@ -61,8 +65,8 @@ const DocumentsTable: React.FC<Props> = ({
   return (
     <section className="px-4 md:px-8 lg:px-[100px] py-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#4A2F26] text-center mb-8">
-          {title}
+        <h2 className="text-xl md:text-4xl font-bold text-[#4A2F26] text-center mb-8">
+          B : {title}
         </h2>
         <div className="overflow-x-auto">
           <table className="min-w-full border-separate border-spacing-x-2 border-spacing-y-3">
@@ -100,16 +104,10 @@ const DocumentsTable: React.FC<Props> = ({
                           href={row.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:opacity-80 transition-opacity"
+                          className="hover:opacity-80 transition-opacity text-[#4A2F26] underline"
                           title="Open in new tab"
                         >
-                          <Image
-                            src="/images/pdf.svg"
-                            alt="PDF Icon"
-                            width={40}
-                            height={40}
-                            className="h-10 w-10"
-                          />
+                          {row.title}
                         </a>
                         {/* <a
                         href={row.href}
@@ -139,5 +137,6 @@ const DocumentsTable: React.FC<Props> = ({
     </section>
   );
 };
+
 
 export default DocumentsTable;

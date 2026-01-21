@@ -28,8 +28,8 @@ const InfrastructureTable: React.FC<Props> = ({
   return (
     <section className="px-4 md:px-8 lg:px-[100px] py-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#4A2F26] text-center mb-8">
-          {title}
+        <h2 className="text-xl md:text-4xl font-bold text-[#4A2F26] text-center mb-8">
+          C : {title}
         </h2>
         <div className="overflow-x-auto ">
           <table className="min-w-full border-separate border-spacing-x-3 border-spacing-y-4">

@@ -148,10 +148,10 @@ export default function ContactSection() {
                     princeton2011@hotmail.com
                   </Link>
                   <Link
-                    href="mailto:45979@cbseishiksha.in"
+                    href="mailto:45979@CBSEshiksha.in"
                     className="hover:underline"
                   >
-                    45979@cbseishiksha.in
+                    45979@CBSEshiksha.in
                   </Link>
                 </div>
               </li>

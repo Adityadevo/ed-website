@@ -12,43 +12,43 @@ export interface DocumentRow {
 const defaultDocs: DocumentRow[] = [
   {
     sl: 1,
-    title: "Affiliation Grant Letter",
+    title: "Copy of Affiliation Grant Letter",
     href: "/pdf/PPS Affiliation Grant Letter.pdf",
   },
-  { sl: 2, title: "Land Certificate", href: "/pdf/PPS Land Certificate.pdf" },
+  { sl: 2, title: "Copy of Land Certificate", href: "/pdf/PPS Land Certificate.pdf" },
   { sl: 3, title: "No Objection Certificate (NOC)", href: "/pdf/PPS NOC.pdf" },
   {
     sl: 4,
-    title: "Recognition Certificate",
+    title: "Copy of Recognition Certificate",
     href: "/pdf/PPS Recognition Certificate.pdf",
   },
   {
     sl: 5,
-    title: "Building Safety Certificate",
+    title: "Copy of Building Safety Certificate",
     href: "/pdf/PPS Building Safety Certificate.pdf",
   },
   {
     sl: 6,
-    title: "Fire Safety Certificate",
+    title: "Copy of Fire Safety Certificate",
     href: "/pdf/PPS Fire Safety Certificate.pdf",
   },
   {
     sl: 7,
-    title: "Drinking Water Test Certificate",
+    title: "Copy of Drinking Water Test Certificate",
     href: "/pdf/PPS Drinking Water Test Report.pdf",
   },
   {
     sl: 8,
-    title: "Fee Structure of the School",
+    title: "Copy of Fee Structure of the School",
     href: "/pdf/PPS Fee Structure.pdf",
   },
   {
     sl: 9,
-    title: "Current Academic Calendar",
+    title: "Copy of Current Academic Calendar",
     href: "/pdf/PPS Academic Calendar.pdf",
   },
-  { sl: 10, title: "Parent Teacher Association", href: "/pdf/PPS PTA.pdf" },
-  { sl: 11, title: "Staff Details", href: "/pdf/PPS Staff Details.pdf" },
+  { sl: 10, title: "Copy of Parent Teacher Association", href: "/pdf/PPS PTA.pdf" },
+  { sl: 11, title: "Copy of Staff Details", href: "/pdf/PPS Staff Details.pdf" },
 ];
 
 

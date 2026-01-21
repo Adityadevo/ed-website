@@ -26,7 +26,7 @@ const AMENITIES: Amenity[] = [
   {
     title: "Indoor Sports",
     description:
-      "Well equipped indoor play area for the age group of 3-10 years for learning through fun.",
+      "A well-equipped computer lab with modern systems to help students develop essential computer and technology skills in a practical learning environment.",
     mockIndex: 4,
     image: "/images/computerlab.webp",
   },

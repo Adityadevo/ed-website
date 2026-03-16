@@ -9,11 +9,11 @@ export interface InfraRow {
 const defaultInfra: InfraRow[] = [
   { sl: 1, label: "Total Campus Area (sq m)", value: <span className="font-semibold">4230.48</span> },
   { sl: 2, label: "No. & Size of Classrooms", value: <span className="font-semibold">24&50 sq.m</span> },
-  { sl: 3, label: "No. & Size of Laboratories", value: <span className="font-semibold">5&76 sq.m</span> },
+  { sl: 3, label: "No. & Size of Laboratories", value: <span className="font-semibold">5&158 sq.m</span> },
   { sl: 4, label: "Internet Facility (Y / N)", value: <span className="font-semibold">Yes</span> },
   { sl: 5, label: "No. of Girls Toilet", value: <span className="font-semibold">24</span> },
   { sl: 6, label: "No. of Boys Toilet", value: <span className="font-semibold">24</span> },
-  { sl: 7, label: "Link of YouTube Video of School Inspection", value: <a className="text-[#A64253] font-semibold hover:underline" target="_blank" href="https://youtu.be/pY-qc-ybe28?si=GpG-uDGOtv1vUhEH">Click here for Video</a> },
+  { sl: 7, label: "Link of YouTube Video of School Inspection", value: <a className="text-[#A64253] font-semibold hover:underline" target="_blank" href="https://youtu.be/eqqpNOBgk9I?si=yyMw-lmAf1LL034f">Click here for Video</a> },
 ];
 
 interface Props {

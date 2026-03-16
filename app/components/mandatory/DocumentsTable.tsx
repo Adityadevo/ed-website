@@ -25,17 +25,17 @@ const defaultDocs: DocumentRow[] = [
   {
     sl: 5,
     title: "Copy of Building Safety Certificate",
-    href: "/pdf/PPS Building Safety Certificate.pdf",
+    href: "/pdf/PPS Building Safety Certificatee.pdf",
   },
   {
     sl: 6,
     title: "Copy of Fire Safety Certificate",
-    href: "/pdf/PPS Fire Safety Certificate.pdf",
+    href: "/pdf/PPS Fire Safety Certificatee.pdf",
   },
   {
     sl: 7,
     title: "Copy of Drinking Water Test Certificate",
-    href: "/pdf/PPS Drinking Water Test Report.pdf",
+    href: "/pdf/PPS Drinking Water Test Reportt.pdf",
   },
   {
     sl: 8,

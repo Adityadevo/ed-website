@@ -1,69 +1,83 @@
 import React from "react";
 
-export interface DocumentRow {
+export interface OtherDocumentRow {
   sl: number;
-  title: string;
+  label: string;
   href?: string;
 }
 
-const defaultDocs: DocumentRow[] = [
+const defaultRows: OtherDocumentRow[] = [
   {
     sl: 1,
-    title:
-      "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
-    href: "/www.princetonpublicschool.com/Affiliation Grant Letter.pdf",
+    label: "SELF CERTIFICATION",
+    href: "/www.princetonpublicschool.com/Self Certification.pdf",
   },
   {
     sl: 2,
-    title:
-      "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",
-    href: "/www.princetonpublicschool.com/Trust Certificate.pdf",
+    label: "ANNUAL REPORT 2025-26 WITH SIGNATURES",
+    href: "/www.princetonpublicschool.com/Annual Report 2025-26 with signatures.pdf",
   },
   {
     sl: 3,
-    title:
-      "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
-    href: "/www.princetonpublicschool.com/No Objection Certificate.pdf",
+    label: "INFRASTRUCTURE DETAILS",
+    href: "/www.princetonpublicschool.com/Infrastructure Details.pdf",
   },
+  // {
+  //   sl: 4,
+  //   label: "LAND CERTIFICATE ANNEXURE B WITH SIGNATURES",
+  //   href: "/www.princetonpublicschool.com/Land Certificate Annexure B with signatures.pdf",
+  // },
   {
     sl: 4,
-    title:
-      "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE",
-    href: "/www.princetonpublicschool.com/Recognition Certificate.pdf",
+    label: "LIST OF BOOKS PRESCRIBED 2026-27",
+    href: "/www.princetonpublicschool.com/List of books prescribed 2026-27.pdf",
   },
   {
     sl: 5,
-    title:
-      "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
-    href: "/www.princetonpublicschool.com/PPS Building Safety Certificatee.pdf",
+    label: "NON-PROPRIETARY CHARACTER",
+    href: "/www.princetonpublicschool.com/Non-propretiary character.pdf",
   },
+  // {
+  //   sl: 7,
+  //   label: "PPS STAFF DETAILS",
+  //   href: "/www.princetonpublicschool.com/PPS Staff Details.pdf",
+  // },
+  // {
+  //   sl: 8,
+  //   label: "PTA",
+  //   href: "/www.princetonpublicschool.com/PTA.pdf",
+  // },
   {
     sl: 6,
-    title:
-      "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
-    href: "/www.princetonpublicschool.com/PPS Fire Safety Certificatee.pdf",
+    label: "SAMPLE TC",
+    href: "/www.princetonpublicschool.com/Sample TC.pdf",
   },
   {
     sl: 7,
-    title: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
-    href: "/www.princetonpublicschool.com/PPS Drinking Water Test Reportt.pdf",
+    label: "TEACHER DETAILS",
+    href: "/www.princetonpublicschool.com/Teacher Details.pdf",
+  },
+  {
+    sl: 8,
+    label: "TRUST DEED",
+    href: "/www.princetonpublicschool.com/Trust Deed.pdf",
   },
 ];
 
 interface Props {
   title?: string;
-  rows?: DocumentRow[];
+  rows?: OtherDocumentRow[];
 }
 
-const DocumentsTable: React.FC<Props> = ({
-  title = "Documents and Information",
-  rows = defaultDocs,
+const OtherDocumentsTable: React.FC<Props> = ({
+  title = "OTHER DOCUMENTS",
+  rows = defaultRows,
 }) => {
   return (
     <section className="px-4 md:px-8 lg:px-[100px] py-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[15px] md:text-base font-semibold text-orange-500 mb-3">
-          B : {title} :
+          D : {title} :
         </h2>
 
         <div className="overflow-x-auto">
@@ -88,7 +102,7 @@ const DocumentsTable: React.FC<Props> = ({
                     {row.sl}
                   </td>
                   <td className="border border-gray-300 px-4 py-4 text-left text-sm text-gray-900 font-medium">
-                    {row.title}
+                    {row.label}
                   </td>
                   <td className="border border-gray-300 px-4 py-4 text-left text-sm text-gray-900">
                     {row.href ? (
@@ -109,21 +123,9 @@ const DocumentsTable: React.FC<Props> = ({
             </tbody>
           </table>
         </div>
-
-        {/* <div className="mt-6"> */}
-        {/* <h3 className="text-sm font-semibold text-blue-700 underline mb-2">
-            NOTE:
-          </h3>
-          <p className="text-sm text-gray-900 leading-relaxed">
-            THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED
-            DOCUMENTS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT
-            IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE
-            THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.
-          </p> */}
-        {/* </div> */}
       </div>
     </section>
   );
 };
 
-export default DocumentsTable;
+export default OtherDocumentsTable;

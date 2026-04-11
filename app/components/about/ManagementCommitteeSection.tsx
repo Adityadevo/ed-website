@@ -4,17 +4,17 @@ const managementMembersTop = [
   {
     name: "Mr Anwar Pasha",
     role: "President",
-    image: "/images/members/anwar.webp",
+    image: "/images/members/mranwar.webp",
   },
   {
     name: "Mrs Sheba Reuben",
     role: "Secretary",
-    image: "/images/members/sheba.webp",
+    image: "/images/members/mrssheba.webp",
   },
   {
     name: "Dr. Rudal Dubey",
     role: "Member SMC",
-    image: "/images/members/rudal.webp",
+    image: "/images/members/mrrudal.webp",
   },
 ];
 
@@ -22,22 +22,22 @@ const managementMembersBottom = [
   {
     name: "Mrs. M Shobha",
     role: "Member, Parent Representative",
-    image: "/images/members/shobha.webp",
+    image: "/images/members/mrsshobha.webp",
   },
   {
-    name: "Mrs. Roopa K",
+    name: "Mrs. Farheen Sultana A",
     role: "Member, Teacher Representative",
-    image: "/images/members/roopa.webp",
+    image: "/images/members/farheen.webp",
   },
   {
     name: "Mrs. Sameena Kausar I",
     role: "Member, Teacher Representative",
-    image: "/images/members/sameena.webp",
+    image: "/images/members/mrssameena.webp",
   },
   {
-    name: "Mr. Meesala Lokeswara",
+    name: "Mr. Faruk Pasa",
     role: "Member, Parent Representative",
-    image: "/images/members/meesala.webp",
+    image: "/images/members/faruk.webp",
   },
 ];
 
@@ -79,6 +79,14 @@ export default function ManagementCommitteeSection() {
                     className="object-cover"
                   />
                 </div>
+                <div className="w-[360px] max-w-full bg-[#7A1E23] text-white text-center py-3 px-3">
+                  <div className="font-semibold text-sm md:text-base leading-tight">
+                    {member.name}
+                  </div>
+                  <div className="text-xs md:text-sm opacity-95 leading-tight">
+                    {member.role}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -86,10 +94,7 @@ export default function ManagementCommitteeSection() {
           {/* Bottom Row */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {managementMembersBottom.map((member) => (
-              <div
-                key={member.name}
-                className="flex flex-col items-center bg-[#F5F1EB]"
-              >
+              <div key={member.name} className="flex flex-col items-center">
                 <div className="w-[360px] h-[360px] max-w-full relative overflow-hidden">
                   <Image
                     src={member.image}
@@ -97,6 +102,14 @@ export default function ManagementCommitteeSection() {
                     fill
                     className="object-cover"
                   />
+                </div>
+                <div className="w-[360px] max-w-full bg-[#7A1E23] text-white text-center py-3 px-3">
+                  <div className="font-semibold text-sm md:text-base leading-tight">
+                    {member.name}
+                  </div>
+                  <div className="text-xs md:text-sm opacity-95 leading-tight">
+                    {member.role}
+                  </div>
                 </div>
               </div>
             ))}

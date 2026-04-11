@@ -2,9 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/home/Footer";
 import TestimonialsSection from "../components/home/TestimonialsSection";
-import DisclosureHero from "../components/mandatory/DisclosureHero";
 import GeneralInfoTable from "../components/mandatory/GeneralInfoTable";
 import DocumentsTable from "../components/mandatory/DocumentsTable";
+import ResultAcademicsTable from "../components/mandatory/ResultAcademicsTable";
+import OtherDocumentsTable from "../components/mandatory/OtherDocumentsTable";
+import StaffTeachingTable from "../components/mandatory/StaffTeachingTable";
 import InfrastructureTable from "../components/mandatory/InfrastructureTable";
 import AdmissionsHero from "../components/home/AdmissionHero";
 
@@ -25,6 +27,9 @@ export default function MandatoryDisclosurePage() {
       {/* Sections */}
       <GeneralInfoTable />
       <DocumentsTable />
+      <ResultAcademicsTable />
+      <OtherDocumentsTable />
+      <StaffTeachingTable />
       <InfrastructureTable />
 
       {/* Testimonials + Footer */}

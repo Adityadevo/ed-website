@@ -20,7 +20,7 @@ const defaultInfra: InfraRow[] = [
   {
     sl: 3,
     label: "No. & Size of Laboratories",
-    value: <span className="font-semibold">5&158 sq.m</span>,
+    value: <span className="font-semibold">4&76 sq.m</span>,
   },
   {
     sl: 4,

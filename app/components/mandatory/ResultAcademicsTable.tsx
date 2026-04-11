@@ -10,7 +10,7 @@ const defaultRows: ResultAcademicsRow[] = [
   { sl: 1, label: "FEE STRUCTURE OF THE SCHOOL", href: "/www.princetonpublicschool.com/Fees Structure.pdf" },
   { sl: 2, label: "ANNUAL ACADEMIC CALENDER", href: "/www.princetonpublicschool.com/Academic Calendar.pdf" },
   { sl: 3, label: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", href: "/www.princetonpublicschool.com/SMC List 2025-26.pdf" },
-  { sl: 4, label: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS", href: "/www.princetonpublicschool.com/PPS PTA.pdf" },
+  { sl: 4, label: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS", href: "/www.princetonpublicschool.com/PTA.pdf" },
   { sl: 5, label: "LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY", href: "/www.princetonpublicschool.com/Three Year Result.pdf" },
 ];
 

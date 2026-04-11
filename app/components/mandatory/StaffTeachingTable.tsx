@@ -53,7 +53,7 @@ const defaultRows: StaffTeachingRow[] = [
   {
     sl: 4,
     label: "DETAILS OF SPECIAL EDUCATOR",
-    value: "Mrs. Karpagam S, M.Sc Psychology, B.Ed",
+    value: "Ms PETRICIA PREETHI, BA, DIP ON SPECIAL EDUCATION (MR)",
   },
   {
     sl: 5,

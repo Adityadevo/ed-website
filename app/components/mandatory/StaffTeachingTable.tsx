@@ -214,7 +214,7 @@ const StaffTeachingTable: React.FC<Props> = ({
           </div>
         </div>
 
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <h3 className="text-[15px] md:text-base font-semibold text-orange-500 mb-3">
             RESULT CLASS: XII
           </h3>
@@ -268,7 +268,7 @@ const StaffTeachingTable: React.FC<Props> = ({
               </tbody>
             </table>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -46,7 +46,8 @@ const defaultDocs: DocumentRow[] = [
 
    {
     sl: 7,
-    title: "SELF CERTIFICATION",
+    title:
+      "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
     href: "/www.princetonpublicschool.com/Self Certification.pdf",
   },
   {

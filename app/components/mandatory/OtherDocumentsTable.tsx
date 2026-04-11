@@ -7,11 +7,11 @@ export interface OtherDocumentRow {
 }
 
 const defaultRows: OtherDocumentRow[] = [
-  {
-    sl: 1,
-    label: "SELF CERTIFICATION",
-    href: "/www.princetonpublicschool.com/Self Certification.pdf",
-  },
+  // {
+  //   sl: 1,
+  //   label: "SELF CERTIFICATION",
+  //   href: "/www.princetonpublicschool.com/Self Certification.pdf",
+  // },
   {
     sl: 2,
     label: "ANNUAL REPORT 2025-26 WITH SIGNATURES",
@@ -57,11 +57,11 @@ const defaultRows: OtherDocumentRow[] = [
     label: "TEACHER DETAILS",
     href: "/www.princetonpublicschool.com/Teacher Details.pdf",
   },
-  {
-    sl: 8,
-    label: "TRUST DEED",
-    href: "/www.princetonpublicschool.com/Trust Deed.pdf",
-  },
+  // {
+  //   sl: 8,
+  //   label: "TRUST DEED",
+  //   href: "/www.princetonpublicschool.com/Trust Deed.pdf",
+  // },
 ];
 
 interface Props {

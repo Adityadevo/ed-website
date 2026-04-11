@@ -17,7 +17,7 @@ const defaultDocs: DocumentRow[] = [
     sl: 2,
     title:
       "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",
-    href: "/www.princetonpublicschool.com/Trust Certificate.pdf",
+    href: "/www.princetonpublicschool.com/Trust Deed.pdf",
   },
   {
     sl: 3,
@@ -43,8 +43,14 @@ const defaultDocs: DocumentRow[] = [
       "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
     href: "/www.princetonpublicschool.com/PPS Fire Safety Certificatee.pdf",
   },
-  {
+
+   {
     sl: 7,
+    title: "SELF CERTIFICATION",
+    href: "/www.princetonpublicschool.com/Self Certification.pdf",
+  },
+  {
+    sl: 8,
     title: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
     href: "/www.princetonpublicschool.com/PPS Drinking Water Test Reportt.pdf",
   },

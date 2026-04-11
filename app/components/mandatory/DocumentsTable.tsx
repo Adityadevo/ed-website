@@ -83,7 +83,7 @@ const DocumentsTable: React.FC<Props> = ({
                   DOCUMENTS/INFORMATION
                 </th>
                 <th className="border border-gray-300 px-4 py-3 text-left text-gray-500 font-medium text-xs uppercase tracking-wide">
-                  LINKS OF UPLOADED DOCUMENTS ON YOUR SCHOOL'S WEBSITE
+                  LINKS OF UPLOADED DOCUMENTS 
                 </th>
               </tr>
             </thead>

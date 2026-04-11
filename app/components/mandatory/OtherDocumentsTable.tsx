@@ -13,12 +13,12 @@ const defaultRows: OtherDocumentRow[] = [
   //   href: "/www.princetonpublicschool.com/Self Certification.pdf",
   // },
   {
-    sl: 2,
+    sl: 1,
     label: "ANNUAL REPORT 2025-26 WITH SIGNATURES",
     href: "/www.princetonpublicschool.com/Annual Report 2025-26 with signatures.pdf",
   },
   {
-    sl: 3,
+    sl: 2,
     label: "INFRASTRUCTURE DETAILS",
     href: "/www.princetonpublicschool.com/Infrastructure Details.pdf",
   },
@@ -28,12 +28,12 @@ const defaultRows: OtherDocumentRow[] = [
   //   href: "/www.princetonpublicschool.com/Land Certificate Annexure B with signatures.pdf",
   // },
   {
-    sl: 4,
+    sl: 3,
     label: "LIST OF BOOKS PRESCRIBED 2026-27",
     href: "/www.princetonpublicschool.com/List of books prescribed 2026-27.pdf",
   },
   {
-    sl: 5,
+    sl: 4,
     label: "NON-PROPRIETARY CHARACTER",
     href: "/www.princetonpublicschool.com/Non-propretiary character.pdf",
   },
@@ -48,12 +48,12 @@ const defaultRows: OtherDocumentRow[] = [
   //   href: "/www.princetonpublicschool.com/PTA.pdf",
   // },
   {
-    sl: 6,
+    sl: 5,
     label: "SAMPLE TC",
     href: "/www.princetonpublicschool.com/Sample TC.pdf",
   },
   {
-    sl: 7,
+    sl: 6,
     label: "TEACHER DETAILS",
     href: "/www.princetonpublicschool.com/Teacher Details.pdf",
   },

@@ -27,7 +27,7 @@ const managementMembersBottom = [
   {
     name: "Mrs. Farheen Sultana A",
     role: "Member, Teacher Representative",
-    image: "/images/members/farheen.webp",
+    image: "/images/members/Farheen.webp",
   },
   {
     name: "Mrs. Sameena Kausar I",

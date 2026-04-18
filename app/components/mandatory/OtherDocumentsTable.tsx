@@ -3,6 +3,7 @@ import React from "react";
 export interface OtherDocumentRow {
   sl: number;
   label: string;
+  linkText?: string;
   href?: string;
 }
 
@@ -15,11 +16,14 @@ const defaultRows: OtherDocumentRow[] = [
   {
     sl: 1,
     label: "ANNUAL REPORT 2025-26 WITH SIGNATURES",
+    linkText:
+      "www.princetonpublicschool.com/AnnualReport",
     href: "/www.princetonpublicschool.com/Annual Report 2025-26 with signatures.pdf",
   },
   {
     sl: 2,
     label: "INFRASTRUCTURE DETAILS",
+    linkText: "www.princetonpublicschool.com/InfrastructureDetails",
     href: "/www.princetonpublicschool.com/Infrastructure Details.pdf",
   },
   // {
@@ -30,11 +34,13 @@ const defaultRows: OtherDocumentRow[] = [
   {
     sl: 3,
     label: "LIST OF BOOKS PRESCRIBED 2026-27",
+    linkText: "www.princetonpublicschool.com/ListofBooksPrescribed",
     href: "/www.princetonpublicschool.com/List of books prescribed 2026-27.pdf",
   },
   {
     sl: 4,
     label: "NON-PROPRIETARY CHARACTER",
+    linkText: "www.princetonpublicschool.com/Non-propretiaryCharacter",
     href: "/www.princetonpublicschool.com/Non-propretiary character.pdf",
   },
   // {
@@ -50,11 +56,13 @@ const defaultRows: OtherDocumentRow[] = [
   {
     sl: 5,
     label: "SAMPLE TC",
+    linkText: "www.princetonpublicschool.com/SampleTC",
     href: "/www.princetonpublicschool.com/Sample TC.pdf",
   },
   {
     sl: 6,
     label: "TEACHER DETAILS",
+    linkText: "www.princetonpublicschool.com/TeachersDetails",
     href: "/www.princetonpublicschool.com/Teacher Details.pdf",
   },
   // {
@@ -110,9 +118,9 @@ const OtherDocumentsTable: React.FC<Props> = ({
                         href={row.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full border border-blue-400 px-3 py-2 text-sm text-gray-900 hover:underline"
+                        className="block w-full border border-blue-400 px-3 py-2 text-xs md:text-sm text-gray-900 hover:underline break-words"
                       >
-                        {row.href}
+                        {row.linkText ?? row.href}
                       </a>
                     ) : (
                       <span className="text-gray-500">NA</span>

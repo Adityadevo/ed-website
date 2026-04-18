@@ -3,6 +3,7 @@ import React from "react";
 export interface DocumentRow {
   sl: number;
   title: string;
+  linkText?: string;
   href?: string;
 }
 
@@ -11,48 +12,56 @@ const defaultDocs: DocumentRow[] = [
     sl: 1,
     title:
       "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
+    linkText: "www.princetonpublicschool.com/AffiliationLetter",
     href: "/www.princetonpublicschool.com/Affiliation Grant Letter.pdf",
   },
   {
     sl: 2,
     title:
       "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",
+    linkText: "www.princetonpublicschool.com/TrustCertificate",
     href: "/www.princetonpublicschool.com/Trust Deed.pdf",
   },
   {
     sl: 3,
     title:
       "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
+    linkText: "www.princetonpublicschool.com/NOCertificate",
     href: "/www.princetonpublicschool.com/No Objection Certificate.pdf",
   },
   {
     sl: 4,
     title:
       "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE",
+    linkText: "www.princetonpublicschool.com/RecognitionCertificate",
     href: "/www.princetonpublicschool.com/Recognition Certificate.pdf",
   },
   {
     sl: 5,
     title:
       "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
+    linkText: "www.princetonpublicschool.com/BuildingCertificate",
     href: "/www.princetonpublicschool.com/PPS Building Safety Certificatee.pdf",
   },
   {
     sl: 6,
     title:
       "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
+    linkText: "www.princetonpublicschool.com/FireCertificate",
     href: "/www.princetonpublicschool.com/PPS Fire Safety Certificatee.pdf",
   },
 
-   {
+  {
     sl: 7,
     title:
       "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
+    linkText: "www.princetonpublicschool.com/SelfCertification",
     href: "/www.princetonpublicschool.com/Self Certification.pdf",
   },
   {
     sl: 8,
     title: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
+    linkText: "www.princetonpublicschool.com/WaterHealthSanitationCertificate",
     href: "/www.princetonpublicschool.com/PPS Drinking Water Test Reportt.pdf",
   },
 ];
@@ -84,7 +93,7 @@ const DocumentsTable: React.FC<Props> = ({
                   DOCUMENTS/INFORMATION
                 </th>
                 <th className="border border-gray-300 px-4 py-3 text-left text-gray-500 font-medium text-xs uppercase tracking-wide">
-                  LINKS OF UPLOADED DOCUMENTS 
+                  LINKS OF UPLOADED DOCUMENTS
                 </th>
               </tr>
             </thead>
@@ -103,9 +112,9 @@ const DocumentsTable: React.FC<Props> = ({
                         href={row.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full border border-blue-400 px-3 py-2 text-sm text-gray-900 hover:underline"
+                        className="block w-full border border-blue-400 px-3 py-2 text-xs md:text-sm text-gray-900 hover:underline break-words"
                       >
-                        {row.href}
+                        {row.linkText ?? row.href}
                       </a>
                     ) : (
                       <span className="text-gray-500">NA</span>

@@ -3,15 +3,42 @@ import React from "react";
 export interface ResultAcademicsRow {
   sl: number;
   label: string;
+  linkText?: string;
   href?: string;
 }
 
 const defaultRows: ResultAcademicsRow[] = [
-  { sl: 1, label: "FEE STRUCTURE OF THE SCHOOL", href: "/www.princetonpublicschool.com/Fees Structure.pdf" },
-  { sl: 2, label: "ANNUAL ACADEMIC CALENDER", href: "/www.princetonpublicschool.com/Academic Calendar.pdf" },
-  { sl: 3, label: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", href: "/www.princetonpublicschool.com/SMC List 2025-26.pdf" },
-  { sl: 4, label: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS", href: "/www.princetonpublicschool.com/PTA.pdf" },
-  { sl: 5, label: "LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY", href: "/www.princetonpublicschool.com/Three Year Result.pdf" },
+  {
+    sl: 1,
+    label: "FEE STRUCTURE OF THE SCHOOL",
+    linkText: "www.princetonpublicschool.com/FeeStructure",
+    href: "/www.princetonpublicschool.com/Fees Structure.pdf",
+  },
+  {
+    sl: 2,
+    label: "ANNUAL ACADEMIC CALENDER",
+    linkText: "www.princetonpublicschool.com/AcademicCalendar",
+    href: "/www.princetonpublicschool.com/AcademicCalendar.pdf",
+  },
+  {
+    sl: 3,
+    label: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)",
+    linkText: "www.princetonpublicschool.com/SMC",
+    href: "/www.princetonpublicschool.com/SMC List 2025-26.pdf",
+  },
+  {
+    sl: 4,
+    label: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
+    linkText: "www.princetonpublicschool.com/PTA",
+    href: "/www.princetonpublicschool.com/PTA.pdf",
+  },
+  {
+    sl: 5,
+    label:
+      "LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY",
+    linkText: "www.princetonpublicschool.com/ThreeYearsResult",
+    href: "/www.princetonpublicschool.com/Three Year Result.pdf",
+  },
 ];
 
 interface Props {
@@ -41,7 +68,7 @@ const ResultAcademicsTable: React.FC<Props> = ({
                   DOCUMENTS/INFORMATION
                 </th>
                 <th className="border border-gray-300 px-4 py-3 text-left text-gray-500 font-medium text-xs uppercase tracking-wide">
-                  LINKS OF UPLOADED DOCUMENTS 
+                  LINKS OF UPLOADED DOCUMENTS
                 </th>
               </tr>
             </thead>
@@ -60,9 +87,9 @@ const ResultAcademicsTable: React.FC<Props> = ({
                         href={row.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full border border-blue-400 px-3 py-2 text-sm text-gray-900 hover:underline"
+                        className="block w-full border border-blue-400 px-3 py-2 text-xs md:text-sm text-gray-900 hover:underline break-words"
                       >
-                        {row.href}
+                        {row.linkText ?? row.href}
                       </a>
                     ) : (
                       <span className="text-gray-500">NA</span>

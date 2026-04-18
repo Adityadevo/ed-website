@@ -35,7 +35,7 @@ const managementMembersBottom = [
     image: "/images/members/mrssameena.webp",
   },
   {
-    name: "Mr. Faruk Pasa",
+    name: "Mr. Faruk Pasha",
     role: "Member, Parent Representative",
     image: "/images/members/faruk.webp",
   },

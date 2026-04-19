@@ -26,7 +26,7 @@ const defaultDocs: DocumentRow[] = [
     sl: 3,
     title:
       "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
-    linkText: "www.princetonpublicschool.com/NOCertificate",
+    linkText: "www.princetonpublicschool.com/NOC",
     href: "/www.princetonpublicschool.com/No Objection Certificate.pdf",
   },
   {

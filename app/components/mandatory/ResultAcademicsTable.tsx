@@ -18,7 +18,7 @@ const defaultRows: ResultAcademicsRow[] = [
     sl: 2,
     label: "ANNUAL ACADEMIC CALENDER",
     linkText: "www.princetonpublicschool.com/AcademicCalendar",
-    href: "/www.princetonpublicschool.com/AcademicCalendar.pdf",
+    href: "/www.princetonpublicschool.com/Academic Calendar.pdf",
   },
   {
     sl: 3,

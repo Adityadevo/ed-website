@@ -9,6 +9,7 @@ import OtherDocumentsTable from "../components/mandatory/OtherDocumentsTable";
 import StaffTeachingTable from "../components/mandatory/StaffTeachingTable";
 import InfrastructureTable from "../components/mandatory/InfrastructureTable";
 import AdmissionsHero from "../components/home/AdmissionHero";
+import TeacherDetailsTable from "../components/mandatory/TeacherDetailsTable";
 
 export default function MandatoryDisclosurePage() {
   return (
@@ -31,6 +32,7 @@ export default function MandatoryDisclosurePage() {
       <OtherDocumentsTable />
       <StaffTeachingTable />
       <InfrastructureTable />
+      <TeacherDetailsTable/>
 
       {/* Testimonials + Footer */}
       <section className="px-4 md:px-8 lg:px-[100px]">

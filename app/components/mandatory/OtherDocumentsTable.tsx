@@ -59,12 +59,12 @@ const defaultRows: OtherDocumentRow[] = [
     linkText: "www.princetonpublicschool.com/SampleTC",
     href: "/www.princetonpublicschool.com/Sample TC.pdf",
   },
-  {
-    sl: 6,
-    label: "TEACHER DETAILS",
-    linkText: "www.princetonpublicschool.com/TeachersDetails",
-    href: "/www.princetonpublicschool.com/Teacher Details.pdf",
-  },
+  // {
+  //   sl: 6,
+  //   label: "TEACHER DETAILS",
+  //   linkText: "www.princetonpublicschool.com/TeachersDetails",
+  //   href: "/www.princetonpublicschool.com/Teacher Details.pdf",
+  // },
   // {
   //   sl: 8,
   //   label: "TRUST DEED",

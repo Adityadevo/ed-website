@@ -55,7 +55,7 @@ const TeacherDetailsTable: React.FC<Props> = ({
     <section className="px-4 md:px-8 lg:px-[100px] py-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[15px] md:text-base font-semibold text-orange-500 mb-3">
-          G : {title.toUpperCase()} :
+          F : {title.toUpperCase()} :
         </h2>
 
         <div className="overflow-x-auto">

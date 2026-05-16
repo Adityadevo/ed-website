@@ -29,10 +29,11 @@ export default function MandatoryDisclosurePage() {
       <GeneralInfoTable />
       <DocumentsTable />
       <ResultAcademicsTable />
-      <OtherDocumentsTable />
+     
       <StaffTeachingTable />
       <InfrastructureTable />
       <TeacherDetailsTable/>
+       <OtherDocumentsTable />
 
       {/* Testimonials + Footer */}
       <section className="px-4 md:px-8 lg:px-[100px]">
